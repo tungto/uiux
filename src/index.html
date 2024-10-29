@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Bootstrap w/ Vite</title>
-	</head>
-	<body>
-		<div class="container py-4 px-3 mx-auto">
-			<!-- <h1>Hello, Bootstrap and Vite!</h1> -->
-			<button class="btn btn-primary">Primary button</button>
-			<a class="btn btn-primary" href="./pages/login.html">login</a>
-			<!-- </button> -->
-		</div>
-		<script type="module" src="./js/main.js"></script>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Bootstrap w/ Vite</title>
+</head>
+
+<body>
+	<div id="navbarContainer"></div>
+	<div class="container py-4 px-3 mx-auto">
+		<!-- <h1>Hello, Bootstrap and Vite!</h1> -->
+		<button class="btn btn-primary">Primary button</button>
+		<a class="btn btn-primary" href="./pages/login.html">login</a>
+		<!-- </button> -->
+	</div>
+	<div class="test-element"></div>
+	<script>
+		fetch("./pages/components/navbar.html")
+			.then((response) => response.text())
+			.then((content) => {
+				document.getElementById("navbarContainer").innerHTML = content;
+			});
+	</script>
+	<script type="module" src="./js/main.js"></script>
+</body>
+
 </html>
