@@ -5,10 +5,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Bootstrap w/ Vite</title>
+	<link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
 </head>
 
 <body>
 	<div id="navbarContainer"></div>
+
 	<div class="container py-4 px-3 mx-auto">
 		<!-- <h1>Hello, Bootstrap and Vite!</h1> -->
 		<button class="btn btn-primary">Primary button</button>
@@ -16,6 +18,9 @@
 		<!-- </button> -->
 	</div>
 	<div class="test-element"></div>
+
+
+	<!-- Script section -->
 	<script>
 		fetch("./pages/components/navbar.html")
 			.then((response) => response.text())
