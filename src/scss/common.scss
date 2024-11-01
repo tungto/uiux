@@ -2,3 +2,15 @@ a {
     font-family: 'Karla', sans-serif;
 }
 
+body, html {
+     height: 100%;
+ }
+
+footer {
+    margin-top: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
