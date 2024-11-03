@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Searching Product</title>
+	<link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
+	<link href="../css/search-product-found.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="navbarContainer"></div>
+
+	<div class="frame-1249">
+		<div class="frame-1248">
+			<!-- Icon and text container -->
+			<div class="frame-1547753808">
+				<img class="search" src="/img/search.svg">
+				<!-- Placeholder text "RING" -->
+				<span class="search-placeholder">RING</span>
+			</div>
+			
+			<!-- Clear button -->
+			<div class="x-button">
+				<div class="cross-line cross-line-1"></div>
+				<div class="cross-line cross-line-2"></div>
+			</div>
+		</div>
+		<!-- Line 42 -->
+		<div class="line-42"></div>
+	</div>
+
+	<script>
+		fetch("components/navbar.html")
+			.then((response) => response.text())
+			.then((content) => {
+				document.getElementById("navbarContainer").innerHTML = content;
+			});
+	</script>
+	<script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

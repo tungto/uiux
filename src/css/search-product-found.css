@@ -1,0 +1,82 @@
+/* Frame 1249 styling */
+.frame-1249 {
+    width: 630px;
+    height: 30px;
+    position: absolute;
+    top: 221px;
+    left: 405px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Search bar container styling */
+.frame-1248 {
+    width: 630px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    gap: 8px;
+
+}
+
+/* Icon and text container */
+.frame-1547753808 {
+    width: 608px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.frame-1547753808 .search {
+    width: 22px;
+    height: 22px;
+}
+
+/* Placeholder text "RING" styling */
+.frame-1547753808 .search-placeholder {
+    width: 578px;
+    height: 22px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #000;
+}
+
+/* Clear button styling */
+.x-button {
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x-button .cross-line {
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background-color: #000;
+}
+
+/* Rotate first line to 45 degrees */
+.x-button .cross-line-1 {
+    transform: rotate(45deg);
+}
+
+/* Rotate second line to -45 degrees */
+.x-button .cross-line-2 {
+    transform: rotate(-45deg);
+}
+
+/* Line 42 styling */
+.line-42 {
+    width: 630px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+}
