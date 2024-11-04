@@ -8,17 +8,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
 </head>
 
-<body>
+<body class="content-wrapper">
 	<div id="navbarContainer"></div>
-
-	<div class="container py-4 px-3 mx-auto">
-		<!-- <h1>Hello, Bootstrap and Vite!</h1> -->
-		<button class="btn btn-primary">Primary button</button>
-		<a class="btn btn-primary" href="./pages/login.html">login</a>
-		<!-- </button> -->
+	<div>
+		<div class="container py-4 px-3 mx-auto">
+			<!-- <h1>Hello, Bootstrap and Vite!</h1> -->
+			<button class="btn btn-primary">Primary button</button>
+			<a class="btn btn-primary" href="./pages/login.html">login</a>
+			<!-- </button> -->
+		</div>
 	</div>
-	<div class="test-element"></div>
-
+	<footer id="footerContainer" class="main-footer"></footer>
 
 	<!-- Script section -->
 	<script>
@@ -27,8 +27,15 @@
 			.then((content) => {
 				document.getElementById("navbarContainer").innerHTML = content;
 			});
+		fetch("./pages/components/footer.html")
+			.then((response) => response.text())
+			.then((content) => {
+				document.getElementById("footerContainer").innerHTML = content;
+			});
 	</script>
 	<script type="module" src="./js/main.js"></script>
 </body>
+
+
 
 </html>
