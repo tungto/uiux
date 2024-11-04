@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-all</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/shop-all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <!--ALL CATEGORIES-->
+    <div class="container ctg">
+        <div class="row">
+            <div class="col-4 cate-left">
+                <div class="cate-name text-center">
+                <div class="cate-name-all">
+                    <ul>
+                        <li>
+                            <a href="rings.html"><h5>Rings</h5></a>
+                        </li>
+                        <li>
+                            <a href="earrings.html"><h5>Earrings</h5></a>
+                        </li>
+                        <li>
+                            <a href="bracelets.html"><h5>Bracelets</h5></a>
+                        </li>
+                        <li>
+                            <a href="necklaces.html"><h5>Necklaces</h5></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="item-box-all cate-neck mtp">
+                <div class="item-box-img">
+                    <a href="necklaces.html">
+                        <img src="../../public/images/shop-all/cate1.png">
+                    </a>
+                </div>
+                <div class="item-box-content text-center">
+                    <a href="necklaces.html">
+                        <h5>Necklaces</h5>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-4 cate-center">
+                <div class="item-box-all cate-ring mbt">
+                <div class="item-box-img">
+                    <a href=""rings.html>
+                        <img src="../../public/images/shop-all/cate2.png">
+                    </a>
+                </div>
+                <div class="item-box-content text-center">
+                    <a href=""rings.html>
+                        <h5>Rings</h5>
+                    </a>
+                </div>
+                </div>
+                <div class="cate-earr item-box-all mbt">
+                <div class="item-box-img">
+                    <a href="earrings.html">
+                        <img src="../../public/images/shop-all/cate3.png">
+                    </a>
+                </div>
+                <div class="item-box-content text-center">
+                    <a href="earrings.html">
+                        <h5>Earrings</h5>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-4 cate-right">
+                <div class="cate-bra mbt item-box-all">
+                <div class="item-box-img">
+                    <a href="bracelets.html">
+                        <img src="../../public/images/shop-all/cate4.png">
+                    </a>
+                </div>
+                <div class="item-box-content text-center">
+                    <a href="bracelets.html">
+                        <h5>Bracelets</h5>
+                    </a>
+                </div>
+                </div>
+                <h3 class="text-center">Aguri's Jewellery</h3>
+            </div>
+        </div>
+
+        <!--Rings-->
+        <div class="Ring-all cate-all">
+        <h4 class="text-center">Rings</h4>
+        <div class="row">
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/1.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/2.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item-box-all">
+                    <div class="item-box-img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/shop-all/ring-all3.png">
+                    </a>
+                    </div>
+                    <div class="item-box-content text-center">
+                    <a href="rings.html">
+                        <h5>Flawless Ring</h5>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/3.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/4.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/5.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/6.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box-all mbt">
+                    <div class="click-to-all">
+                    <a href="/category/1">
+                        <p class="mdt mb-0 text-center">Show more</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                        <a href="product-detail.html">
+                            <img src="../../public/images/thumb/7.png">
+                        </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Earrings-->
+        <div class="Earring-all cate-all">
+        <h4 class="text-center">Earrings</h4>
+        <div class="row">
+            <div class="col-4">
+                <div class="item-box-all">
+                    <div class="item-box-img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/shop-all/earr-all1.png">
+                    </a>
+                    </div>
+                    <div class="item-box-content text-center">
+                    <a href="earrings.html">
+                        <h5>Sunflower Earring</h5>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/17.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/18.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/19.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/20.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/21.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/22.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box-all mbt">
+                    <div class="click-to-all">
+                    <a href="/category/2">
+                        <p class="mdt mb-0 text-center">Show more</p>
+                    </a>
+                    </div>
+                </div>
+            <div class="card-prd mbt">
+                <div class="img">
+                <a href="product-detail.html">
+                    <img src="../../public/images/thumb/24.png">
+                </a>
+                </div>
+                <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                    data-bs-target="#quickview">
+                Quick view
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Bracelets-->
+        <div class="Bracelet-all cate-all">
+        <h4 class="text-center">Bracelets</h4>
+        <div class="row">
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/52.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/53.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/54.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/55.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt" *ngFor="let item of bracelets | slice: 4:6">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/56.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/58.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item-box-all">
+                    <div class="item-box-img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/shop-all/brac-all5.png">
+                    </a>
+                    </div>
+                    <div class="item-box-content text-center">
+                    <a href="bracelets.html">
+                        <h5>Magic Bracelet</h5>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box-all mbt">
+                    <div class="click-to-all">
+                    <a href="/category/3">
+                        <p class="mdt mb-0 text-center">Show more</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="card-prd mbt" *ngFor="let item of bracelets | slice: 6:7">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/57.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Necklaces-->
+        <div class="Necklace-all cate-all">
+        <h4 class="text-center">Necklaces</h4>
+        <div class="row">
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/31.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/32.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/33.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/34.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item-box-all" *ngFor="let item of necklaces | slice: 7:8">
+                    <div class="item-box-img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/shop-all/neck-all3.png">
+                    </a>
+                    </div>
+                    <div class="item-box-content text-center">
+                    <a href="necklaces.html">
+                        <h5>Angles' Tear Necklace</h5>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/35.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                    Quick view
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/36.png">
+                    </a>
+                    </div>
+                    <div (click)="quickview(item)" class="compare card-prd-bt smt" data-bs-toggle="modal" type="button"
+                        data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box-all mbt">
+                    <div class="click-to-all">
+                    <a href="/category/4">
+                        <p class="mdt mb-0 text-center">Show more</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="card-prd mbt">
+                    <div class="img">
+                    <a href="product-detail.html">
+                        <img src="../../public/images/thumb/39.png">
+                    </a>
+                    </div>
+                    <div class="compare card-prd-bt smt" data-bs-toggle="modal"
+                        type="button" data-bs-target="#quickview">
+                        Quick view
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Back to top-->
+    <div class="to-top" (click)="scrollToTop()">
+        <span>Back to top</span><i class="fa fa-arrow-circle-up fa-3x"></i>
+    </div>
+
+    <!--Modal Quick view-->
+    <div class="container">
+        <div class="modal fade" id="quickview">
+            <div class="modal-dialog modal-dialog-centered quickview">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-7 ps-0">
+                            <!-- carousel -->
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="../../public/images/product-detail/detail2.png">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>  
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="../../public/images/product-detail/detail1.png">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../public/images/product-detail/detail3.png">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-5 pe-0">
+                            <h5>Spring Pearl</h5>
+                            <h5 class="my-3">$999.00</h5>
+                            <form id="productForm">
+                                <div class="d-flex">
+                                    <p class="mdt me-auto">Quantity</p>
+                                    <span class="buttons_added ml-1 qty-box">
+                                        <input aria-label="quantity" class="text-center" max="100" min="1" name="quantity" type="number" value="" required>
+                                    </span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="quick-size my-3">
+                                    <select class="form-select smt" required>
+                                        <option value="">Select size</option>
+                                        <option value="1">3</option>
+                                        <option value="2">3 1/2</option>
+                                        <option value="3">4</option>
+                                        <option value="4">4 1/2</option>
+                                        <option value="5">5</option>
+                                        <option value="6">5 1/2</option>
+                                        <option value="7">-</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-sec my-2 w-100" onclick="handleAddToBag()">Add to bag</button>
+                                <button type="button" class="btn btn-pri my-2 w-100" onclick="handleCheckout()">Checkout</button>
+                                <br><br>
+                                <a href="product-detail.html">View more detail
+                                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function handleAddToBag() {
+            const form = document.getElementById('productForm');
+            if (form.checkValidity()) {
+                alert('The product was successfully added to bag!');
+                form.submit();
+            } else {
+                form.reportValidity();
+            }
+        }
+    
+        function handleCheckout() {
+            const form = document.getElementById('productForm');
+            if (form.checkValidity()) {
+                form.submit();
+                window.location.href = 'checkout.html';
+            } else {
+                form.reportValidity();
+            }
+        }
+    </script>    
+</body>
+</html>

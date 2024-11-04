@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earrings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/category.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <!--category-top-->
+        <div class="category-top row">
+            <div class="col-3">
+                <img src="../../public/images/cate-deco/2.png" />
+            </div>
+            <div class="col-3">
+                <div class="sub-cate-box">
+                    <div class="sub-cate-img">
+                        <img src="../../public/images/cate-deco/2.1.png" />
+                    </div>
+                    <div class="sub-name">
+                        <!-- <p class="mdt mb-0">Dropdangle</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="sub-cate-box">
+                    <div class="sub-cate-img">
+                        <img src="../../public/images/cate-deco/2.2.png" />
+                    </div>
+                    <div class="sub-name">
+                        <!-- <p class="mdt mb-0">Hoop</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="sub-cate-box">
+                    <div class="sub-cate-img">
+                        <img src="../../public/images/cate-deco/2.3.png" />
+                    </div>
+                    <div class="sub-name">
+                        <!-- <p class="mdt mb-0">Stud</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cate-all">
+            <!--category-side-->
+            <div class="category-side-bar col-2">
+                <div class="sticky">
+                    <form ngNativeValidate>
+                        <div class="mb-1">
+                            <p class="font-weight-bolder mb-3">
+                                Collection
+                            </p>
+                            <input
+                                type="checkbox"
+                                class="check-box"
+                                id="collection-1"
+                                name="collection-1"
+                                value="Sping Collection"
+                            />
+                            <label for="collection-1">Spring Vibe</label
+                            ><br />
+                            <input
+                                type="checkbox"
+                                class="check-box"
+                                id="collection-2"
+                                name="collection-2"
+                                value="Aguri Minimalism"
+                            />
+                            <label for="collection-2">Minimalism</label
+                            ><br />
+                            <input
+                                type="checkbox"
+                                class="check-box"
+                                id="collection-3"
+                                name="collection-3"
+                                value="Aguri's Eternity Magic"
+                            />
+                            <label for="collection-3">Eternity Magic</label
+                            ><br />
+                            <input
+                                type="checkbox"
+                                class="check-box"
+                                id="collection-4"
+                                name="collection-4"
+                                value="End-Off-Year Collection"
+                            />
+                            <label for="collection-4">End-Off-Year</label>
+                        </div>
+                        <div class="mt-3 mb-1">
+                            <p class="font-weight-bolder">Jewellery</p>
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="jewellery-1"
+                                name="jewellery-1"
+                                value="Natural Jewellery"
+                            />
+                            <label for="jewellery-1">Natural</label><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="jewellery-2"
+                                name="jewellery-2"
+                                value="Lab-grown Jewellery"
+                            />
+                            <label for="jewellery-2">Lab-grown</label>
+                        </div>
+                        <div class="mt-3 mb-1">
+                            <p class="font-weight-bolder">Materials</p>
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="materials-1"
+                                name="materials-1"
+                                value="Gold"
+                            />
+                            <label for="materials-1">Gold</label><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="materials-2"
+                                name="materials-2"
+                                value="Rose Gold"
+                            />
+                            <label for="materials-2">Rose Gold</label><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="materials-3"
+                                name="materials-3"
+                                value="White Gold"
+                            />
+                            <label for="materials-3">White Gold</label
+                            ><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="materials-4"
+                                name="materials-4"
+                                value="Sterling Silver"
+                            />
+                            <label for="materials-4">Sterling Silver</label>
+                        </div>
+                        <div class="mt-3 mb-1">
+                            <p class="font-weight-bolder">Price</p>
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="price-1"
+                                name="price-1"
+                                value="$500 & Under"
+                            />
+                            <label for="price-1">$0 - $500</label><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="price-2"
+                                name="price-2"
+                                value="$500 - $1,000"
+                            />
+                            <label for="price-2">$500 - $1,000</label><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="price-3"
+                                name="price-3"
+                                value="$1,000 - $2,000"
+                            />
+                            <label for="price-3">$1,000 - $2,000</label
+                            ><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="price-4"
+                                name="price-4"
+                                value="$2,000 - $5,000"
+                            />
+                            <label for="price-4">$2,000 - $5,000</label
+                            ><br />
+                            <input
+                                type="checkbox"
+                                class="check-box check-cate"
+                                id="price-5"
+                                name="price-5"
+                                value="$5,000 & More"
+                            />
+                            <label for="price-5">$5,000 +</label
+                            ><br /><br />
+                            <input
+                                type="text"
+                                placeholder="Min"
+                                class="col-5 price-box"
+                            />
+                            <span> ～ </span>
+                            <input
+                                type="text"
+                                placeholder="Max"
+                                class="col-5 price-box"
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            class="btn btn-pri btnsm mt-3"
+                            onclick="alert('Loading...')"
+                        >
+                            Apply
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!--category-main-->
+            <div class="category-main px-0 col-10">
+                <!--breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol
+                        class="breadcrumb"
+                    >
+                        <li class="breadcrumb-item">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="shop-all.html">Shop All</a>
+                        </li>
+                        <li
+                            class="breadcrumb-item active"
+                            aria-current="page"
+                        >
+                            <a>Earrings</a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- line 1 -->
+                <div class="row cate-product">
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/1.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/2.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/3.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/4.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--line 2: featured-product-->
+                <div class="mb-3 row">
+                    <div class="col-6 mb-9">
+                        <div class="featured">
+                            <div
+                                class="featured-img"
+                            >
+                                <a
+                                    href="product-detail.html"
+                                >
+                                    <img
+                                        src="../../public/images/featured/2.png"
+                                    />
+                                </a>
+                            </div>
+                            <div class="overlay">
+                                <h5>FEATURED PRODUCTS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-9">
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/5.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt mb-0">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-9">
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/6.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt mb-0">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- line 3 -->
+                <div class="row cate-product">
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/7.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/8.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/9.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/10.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- line 4 -->
+                <div class="row cate-product">
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/11.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/12.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/13.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/14.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- line 5 -->
+                <div class="row cate-product">
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/15.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/16.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/17.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-3 card mb-9"
+                    >
+                        <div class="item-card-info">
+                            <div class="card-prd">
+                                <div class="img">
+                                    <a
+                                        href="product-detail.html"
+                                    >
+                                        <img src="../../public/images/earrings/18.png" />
+                                    </a>
+                                </div>
+                                <div
+                                    (click)="quickview(item)"
+                                    class="compare card-prd-bt smt"
+                                    data-bs-toggle="modal"
+                                    type="button"
+                                    data-bs-target="#quickview"
+                                >
+                                    Quick view
+                                </div>
+                            </div>
+                            <div class="item-inf text-center mt-2">
+                                <p class="decor-text mb-1">Earring</p>
+                                <p class="smt item-price">
+                                    $240,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--category-bottom-->
+                <div class="category-bottom text-center">
+                    <div
+                        class="d-flex mt-2"
+                        (click)="scrollToTop()"
+                        [ngClass]="{ 'show-scrollTop': windowScrolled }"
+                    >
+                        <a class="mx-auto back-to-top smt"
+                            >Back to top
+                            <i class="ps-3 fa-solid fa-chevron-up"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Modal Quick view-->
+    <div class="container">
+        <div class="modal fade" id="quickview">
+            <div class="modal-dialog modal-dialog-centered quickview">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-7 ps-0">
+                            <!-- carousel -->
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="../../public/images/product-detail/detail2.png">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>  
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="../../public/images/product-detail/detail1.png">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../public/images/product-detail/detail3.png">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-5 pe-0">
+                            <h5>Spring Pearl</h5>
+                            <h5 class="my-3">$999.00</h5>
+                            <form id="productForm">
+                                <div class="d-flex">
+                                    <p class="mdt me-auto">Quantity</p>
+                                    <span class="buttons_added ml-1 qty-box">
+                                        <input aria-label="quantity" class="text-center" max="100" min="1" name="quantity" type="number" value="" required>
+                                    </span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="quick-size my-3">
+                                    <select class="form-select smt" required>
+                                        <option value="">Select size</option>
+                                        <option value="1">3</option>
+                                        <option value="2">3 1/2</option>
+                                        <option value="3">4</option>
+                                        <option value="4">4 1/2</option>
+                                        <option value="5">5</option>
+                                        <option value="6">5 1/2</option>
+                                        <option value="7">-</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-sec my-2 w-100" onclick="handleAddToBag()">Add to bag</button>
+                                <button type="button" class="btn btn-pri my-2 w-100" onclick="handleCheckout()">Checkout</button>
+                                <br><br>
+                                <a href="product-detail.html">View more detail
+                                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function handleAddToBag() {
+            const form = document.getElementById('productForm');
+            if (form.checkValidity()) {
+                alert('The product was successfully added to bag!');
+                form.submit();
+            } else {
+                form.reportValidity();
+            }
+        }
+    
+        function handleCheckout() {
+            const form = document.getElementById('productForm');
+            if (form.checkValidity()) {
+                form.submit();
+                window.location.href = 'checkout.html';
+            } else {
+                form.reportValidity();
+            }
+        }
+    </script>   
+</body>
+</html>
