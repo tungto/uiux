@@ -7,6 +7,7 @@ body, html {
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 
 @mixin black-uppercase-button {
     background-color: black;
@@ -81,4 +82,13 @@ input[type=radio]{
 input[type=radio]:checked {
     background-color: black;
     border-color: red;
+=======
+body, html {
+     height: 100%;
+ }
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+>>>>>>> 1dcbdfd ([FEAT] Add common footer component (#6))
 }
