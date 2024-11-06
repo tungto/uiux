@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body class="content-wrapper">
 	<div id="navbarContainer"></div>
 
 	<div class="frame-1249">
@@ -32,11 +32,18 @@
 		<div class="line-42"></div>
 	</div>
 
+	<footer id="footerContainer" class="main-footer"></footer>
+
 	<script>
 		fetch("components/navbar.html")
 			.then((response) => response.text())
 			.then((content) => {
 				document.getElementById("navbarContainer").innerHTML = content;
+			});
+		fetch("components/footer.html")
+			.then((response) => response.text())
+			.then((content) => {
+				document.getElementById("footerContainer").innerHTML = content;
 			});
 	</script>
 	<script type="module" src="../js/main.js"></script>
