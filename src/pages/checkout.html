@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Poppins" rel="stylesheet">
+
+</head>
+
+<body class="content-wrapper">
+    <div id="navbarContainer"></div>
+    <div id='checkout' class="content-wrapper">
+        <div class="row flex-grow-1 mx-5">
+            <div class="col border-right-gray">
+                <div class="mt-5 me-4">
+                    <h1 class="header-text mb-3">Checkout</h1>
+                    <div id="ex-checkout">
+                        <p class="text-center">Express checkout</p>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-dark w-100 rounded-pill">Apple Pay</button>
+                            <button type="button"
+                                class="btn btn-warning ml-auto w-100 ms-4 rounded-pill">Paypal</button>
+                        </div>
+                        <div class="my-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <hr>
+                                <p class="ms-3 me-3 mb-0">Or</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-header-text">Contact</div>
+                    <div class="input-group my-4">
+                        <input type="text" class="form-control input-field" placeholder="Email address *">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="mt-5">
+                    3 of 3
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footerContainer" class="main-footer"></footer>
+
+    <!-- Script section -->
+    <script>
+        fetch("./components/navbar.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("navbarContainer").innerHTML = content;
+            });
+        fetch("./components/footer.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("footerContainer").innerHTML = content;
+            });
+    </script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+
+
+</html>

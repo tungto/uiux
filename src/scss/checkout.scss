@@ -1,0 +1,52 @@
+@use "./variables.scss" as var;
+@use "./common.scss" as common;
+
+.border-right-gray {
+    border-right: 1px solid var.$border-gray;
+    height: 100%
+}
+
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    background-color: var.$main-bg-color;
+}
+
+.header-text {
+    font-family: "Della Respira", sans-serif;
+}
+
+.form-header-text {
+    @include common.regular-1;
+    @include common.bold-2;
+    line-height: 140%;
+}
+
+#ex-checkout p {
+    @include common.bold-1;
+}
+
+#ex-checkout button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    font-family: "Poppins";
+    color: white;
+    height: 52px;
+}
+
+#ex-checkout hr {
+    width: 100%;
+    height: 1px;
+    background-color: #020954;
+}
+
+#ex-checkout hr+p {
+    @include common.bold-2;
+    color: #020954;
+}
+
+.input-field {
+    border-radius: 0px;
+    border-color: var.$input-border-gray;    
+}
