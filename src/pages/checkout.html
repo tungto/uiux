@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Nunito+Sans" rel="stylesheet">
+
+</head>
+
+<body class="content-wrapper">
+    <div id="navbarContainer"></div>
+    <div id='checkout' class="content-wrapper">
+        <div class="row flex-grow-1 mx-5 justify-content-center">
+            <div class="col-6 border-right-gray">
+                <div class="mt-5 me-4">
+                    <h1 class="header-text mb-3">Checkout</h1>
+                    <div id="ex-checkout">
+                        <p class="text-center">Express checkout</p>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-dark w-100 rounded-pill">Apple Pay</button>
+                            <button type="button"
+                                class="btn btn-warning ml-auto w-100 ms-4 rounded-pill">Paypal</button>
+                        </div>
+                        <div class="my-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <hr>
+                                <p class="mx-3 mb-0">Or</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="mb-4">
+                        <div class="form-header-text">Contact</div>
+                        <div class="input-group my-4">
+                            <input type="text" class="form-control input-field" placeholder="Email address *">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label regular-1 ms-2 regular-text" for="">Email me with news and
+                                offers</label>
+                        </div>
+                    </div>
+                    <div id="delivery" class="mb-4">
+                        <div class="form-header-text">Delivery</div>
+                        <div class="mt-4">
+                            <input type="text" class="form-control input-field" placeholder="Country / Region">
+                            <input type="text" class="form-control input-field mt-3" placeholder="Address">
+                            <div class="d-flex mt-3">
+                                <input type="text" class="form-control input-field" placeholder="First name *">
+                                <input type="text" class="form-control input-field ms-3" placeholder="Last name *">
+                            </div>
+                            <input type="text" class="form-control input-field mt-3"
+                                placeholder="Apartment, suit, etc. (optional)">
+                            <div class="input-group d-flex mt-3">
+                                <input type="text" class="form-control input-field" placeholder="City">
+                                <input type="text" class="form-control input-field mx-3" placeholder="State / Terriory">
+                                <input type="text" class="form-control input-field" placeholder="Postcode">
+                            </div>
+                            <input type="text" class="form-control input-field mt-3" placeholder="Phone number *">
+                        </div>
+                    </div>
+                    <div id="payment" class="mb-4">
+                        <div class="form-header-text mb-4">Payment</div>
+                        <div id="payment-form">
+                            <div class="form-check active-payment mb-0 d-flex align-items-center">
+                                <div class="ps-4">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label ms-1" for="flexRadioDefault2">
+                                        Credit Card / Debit Card
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="bg-white payment-info">
+                                <div class="px-4 py-4">
+                                    <input type="text" class="form-control input-field" placeholder="Phone number *">
+                                    <input type="text" class="form-control input-field mt-3"
+                                        placeholder="Phone number *">
+                                    <div class="input-group d-flex mt-3">
+                                        <input type="text" class="form-control input-field" placeholder="City">
+                                        <input type="text" class="form-control input-field mx-3" placeholder="State">
+                                        <input type="text" class="form-control input-field" placeholder="Zip code">
+                                    </div>
+                                    <div class="form-check mt-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label regular-1 ms-2 regular-text" for="">Use shipping
+                                            address as billing address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check deactive-payment mb-0 d-flex align-items-center">
+                                <div class="ps-4">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label ms-1" for="flexRadioDefault2">
+                                        Paypal
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rememberme" class="mb-4">
+                        <div class="form-header-text">Remember me</div>
+                        <div class="form-check pt-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label regular-1 ms-2 regular-text" for="">Save my information for a
+                                faster checkout</label>
+                        </div>
+                    </div>
+
+                    <div id="paynow" class="mt-4">
+                        <button id="btn-pay">Pay now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ms-4 me-5 right-panel">
+                <div class="sticky-top pt-5">
+                    <div class="items">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="checkout-image-container">
+                                    <img src="/img/rings/bag-prd2.png" alt="Product image"
+                                        class="checkout-preview-item-img">
+                                    <span class="badge-top-right">1</span>
+                                </div>
+                            </div>
+                            <div class="col align-items-center">
+                                <div class="row">
+                                    <div class="col form-header-text">Diamond Ring</div>
+                                    <div class="col text-end form-header-text">$100</div>
+                                    <div class="mt-2 regular-text">Size: S | Color: Blue</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-auto">
+                                <div class="checkout-image-container">
+                                    <img src="/img/rings/bag-prd2.png" alt="Product image"
+                                        class="checkout-preview-item-img">
+                                    <span class="badge-top-right">1</span>
+                                </div>
+                            </div>
+                            <div class="col align-items-center">
+                                <div class="row">
+                                    <div class="col form-header-text">Diamond Ring</div>
+                                    <div class="col text-end form-header-text">$100</div>
+                                    <div class="mt-2 regular-text">Size: S | Color: Blue</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cupon">
+                        <div class="d-flex mt-4">
+                            <input type="text" class="form-control input-field me-4" placeholder="Cupon code">
+                            <button id="btn-apply-cupon">Apply</button>
+                        </div>
+                    </div>
+                    <hr class="mt-3 mb-4">
+                    <div class="total-price">
+                        <div class="d-flex col align-items-center">
+                            <div class="col regular-text">Subtotal</div>
+                            <div class="col text-end regular-text">$100</div>
+                        </div>
+                        <div class="d-flex col align-items-center mt-2">
+                            <div class="col regular-text">Shipping Fee</div>
+                            <div class="col text-end regular-text">$100</div>
+                        </div>
+                        <div class="d-flex col align-items-center mt-4">
+                            <div class="col form-header-text">Total price</div>
+                            <div class="col text-end form-header-text">$300</div>
+                        </div>
+                    </div>
+                    <hr class="mt-3 mb-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footerContainer" class="main-footer"></footer>
+
+    <!-- Script section -->
+    <script>
+        fetch("./components/navbar.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("navbarContainer").innerHTML = content;
+            });
+        fetch("./components/footer.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("footerContainer").innerHTML = content;
+            });
+    </script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+
+
+</html>
