@@ -1,0 +1,83 @@
+/* Custom Format for Headings */
+.heading-1 {
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.heading-4 {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Karla";
+    line-height: 24.2px;
+}
+
+.heading-3 {
+    font-size: 28px;
+    font-weight: 00;
+    margin-bottom: 0px;
+}
+
+.heading-2 {
+    font-size: 38px;
+    line-height: 41.8px;
+}
+
+/* Custom Format for normal text */
+.content-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Karla";
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+
+/* Size of text boxes */
+.content-area-1 {
+    width: 95%;
+}
+
+.content-area-2 {
+    width: 97%;
+}
+
+
+/* Images format */
+.col-img img {
+    width: 90%;
+    height: 98%;
+    object-fit: scale-down;
+    padding-left: 24px;
+}
+
+.col-img-2 img {
+    height: 98%;
+    object-fit: scale-down;
+}
+
+.col-img-3 img {
+    object-fit: scale-down;
+}
+
+/* Border styles */
+.top-border {
+    border: 1px solid #333333;
+    border-width: 1px 0px 1px 0px;
+}
+
+.full-border {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.border-top {
+    border-color: rgba(204, 204, 204, 1);
+}
+
+/* Dotted list style */
+li {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+
+
