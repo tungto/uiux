@@ -22,6 +22,7 @@
     line-height: 140%;
 }
 
+
 #ex-checkout p {
     @include common.bold-1;
 }
@@ -52,10 +53,6 @@
     height: 45px
 }
 
-#contact label {
-    @include common.regular-1;
-}
-
 #checkout input {
     border-color: var.$border-gray;
 }
@@ -67,8 +64,73 @@
     line-height: 21px;
 }
 
-#payment-form {
+.active-payment {
+    height: 52px;
+    background-color: var.$second-bg-color;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: solid black;
+    border-width: 2px;
+}
+
+.payment-info {
+    background-color: var.$main-bg-color;
     border: solid var.$border-gray;
     border-width: 1px;
-    border-radius: 6px;
+}
+
+.active-payment label {
+    @include common.regular-1;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.deactive-payment {
+    height: 52px;
+    background-color: var.$main-bg-color;
+    border: solid var.$border-gray;
+    border-width: 1px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#btn-pay {
+    @include common.black-uppercase-button;
+}
+
+#paynow {
+    margin-bottom: 60px;
+}
+
+.img-col {
+    width: 100%;
+}
+
+.checkout-image-container {
+    position: relative;
+}
+
+.checkout-preview-item-img {
+    width: 100px;
+    height: 100px;
+}
+
+.badge-top-right {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #F0E5E3;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #020954;
+}
+
+#btn-apply-cupon {
+    @include common.black-uppercase-button;
+    border-radius: 0px;
+    width: 120px;
 }

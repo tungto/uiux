@@ -7,11 +7,27 @@ body, html {
     flex-direction: column;
 }
 
+
+@mixin black-uppercase-button {
+    background-color: black;
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
 @mixin regular-1 {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     line-height: 22px;
     font-size: 16px;
+}
+
+.regular-text {
+    @include regular-1;
 }
 
 @mixin bold-1 {
@@ -34,6 +50,20 @@ p {
     @include regular-1;
 }
 
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;}
+
 input[type=checkbox]:checked {
     background-color: black;
+}
+
+input[type=radio]{
+    height: 20px;
+    width: 20px;
+}
+
+input[type=radio]:checked {
+    background-color: black;
+    border-color: red;
 }
