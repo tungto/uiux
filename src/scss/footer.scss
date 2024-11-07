@@ -1,8 +1,5 @@
 @use "./variables.scss" as var;
-<<<<<<< HEAD
 @use "./common.scss" as common;
-=======
->>>>>>> 1dcbdfd ([FEAT] Add common footer component (#6))
 
 .main-footer {
     margin-top: auto;
@@ -46,17 +43,7 @@ footer input#email:focus {
 
 
 footer button#join {
-<<<<<<< HEAD
     @include common.black-uppercase-button;
-=======
-    background-color: black;
-    width: 100%;
-    height: 45px;
-    color: white;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
->>>>>>> 1dcbdfd ([FEAT] Add common footer component (#6))
 }
 
 .copyright-txt {
