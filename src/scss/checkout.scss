@@ -48,5 +48,27 @@
 
 .input-field {
     border-radius: 0px;
-    border-color: var.$input-border-gray;    
+    border-color: var.$input-border-gray;
+    height: 45px
+}
+
+#contact label {
+    @include common.regular-1;
+}
+
+#checkout input {
+    border-color: var.$border-gray;
+}
+
+#checkout input::placeholder {
+    @include common.regular-1;
+    color: var.$border-gray;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 21px;
+}
+
+#payment-form {
+    border: solid var.$border-gray;
+    border-width: 1px;
+    border-radius: 6px;
 }
