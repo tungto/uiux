@@ -1,0 +1,50 @@
+@use "./variables.scss" as var;
+@use "./common.scss" as common;
+
+.thankyou-container {
+    max-width: 850px;
+}
+
+.thankyou-heading {
+    width: 630px;
+}
+
+.thankyou-header-text {
+    font-family: "Della Respira", sans-serif;
+    font-weight: 500px;
+    font-size: 38px;
+    line-height: 42px;
+}
+
+#btn-continue-shopping {
+    @include common.black-uppercase-button;
+    border-radius: 0px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#btn-tracking-order {
+    @include common.white-uppercase-button;
+    border-radius: 0px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.form-header-text {
+    @include common.regular-1;
+    @include common.bold-2;
+    line-height: 140%;
+}
+
+#order-summary-header {
+    background-color: var.$second-bg-color;
+    height: 48px;
+}
+
+.total-items-text {
+    color: #273E80;
+}
+
+.order-summary-text {
+    font-size: 20px;
+}

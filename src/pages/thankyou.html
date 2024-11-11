@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira" rel="stylesheet">
+</head>
+
+<body class="content-wrapper">
+    <div id="navbarContainer"></div>
+    <div class="container thankyou-container d-flex justify-content-center text-center pt-5">
+        <div>
+            <div class="thankyou-heading text-center">
+                <p class="thankyou-header-text">Thanks for your order!</p>
+                <p class="mb-0">Hi, we're getting your order ready to be shipped! We will notify</p>
+                <p class="mb-4">you by email when it have been send.</p>
+                <div>
+                    <div class="d-flex">
+                        <button id="btn-tracking-order" class="w-100">Tracking order</button>
+                        <button id="btn-continue-shopping" class="w-100 ms-4">Continue Shopping</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex order-detail">
+                <div class="row w-100 ms-0 me-0 mt-5">
+                    <div class="col w-100 text-start ps-0 pe-0 form-header-text">Order number</div>
+                    <div class="col w-100 text-end ps-0 pe-0 form-header-text">Order date</div>
+                </div>
+            </div>
+            <div class="d-flex order-detail">
+                <div class="row w-100 ms-0 me-0 mt-2">
+                    <div class="col w-100 text-start ps-0 pe-0 regular-text">#098160123</div>
+                    <div class="col w-100 text-end ps-0 pe-0 regular-text">December 22, 2024</div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-5">
+            <div id="order-summary">
+                <div id="order-summary-header">
+                    <div class="d-flex order-detail h-100 justify-content-center">
+                        <div class="row w-100 ms-0 me-0 mt-0 px-3 align-items-center">
+                            <div class="col w-100 text-start ps-0 pe-0 form-header-text order-summary-text">Order
+                                Summary</div>
+                            <div class="col w-100 text-end ps-0 pe-0 regular-text total-items-text">2 items</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="checkout-image-container">
+                                <img src="/img/rings/bag-prd2.png" alt="Product image"
+                                    class="checkout-preview-item-img">
+                            </div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="row">
+                                <div class="col form-header-text text-start">Diamond Ring</div>
+                                <div class="col text-end form-header-text">$100</div>
+                                <div class="mt-2 regular-text text-start">Size: S | Color: Blue</div>
+                                <div class="mt-2 regular-text text-start">Quantity: 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <footer id="footerContainer" class="main-footer"></footer>
+
+    <!-- Script section -->
+    <script>
+        fetch("./components/navbar.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("navbarContainer").innerHTML = content;
+            });
+        fetch("./components/footer.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("footerContainer").innerHTML = content;
+            });
+    </script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+
+
+</html>
