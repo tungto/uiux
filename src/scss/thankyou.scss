@@ -30,21 +30,20 @@
     line-height: 25px;
 }
 
-.form-header-text {
-    @include common.regular-1;
-    @include common.bold-2;
-    line-height: 140%;
-}
-
-#order-summary-header {
+#thankyou-detail-header {
     background-color: var.$second-bg-color;
     height: 48px;
+}
+
+.thankyou-header-menu-text {
+    font-size: 20px;
 }
 
 .total-items-text {
     color: #273E80;
 }
 
-.order-summary-text {
-    font-size: 20px;
+.thankyou-preview-item-img {
+    width: 150px;
+    height: 180px;
 }
