@@ -1,0 +1,49 @@
+@use "./variables.scss" as var;
+@use "./common.scss" as common;
+
+.thankyou-container {
+    max-width: 850px;
+}
+
+.thankyou-heading {
+    width: 630px;
+}
+
+.thankyou-header-text {
+    font-family: "Della Respira", sans-serif;
+    font-weight: 500px;
+    font-size: 38px;
+    line-height: 42px;
+}
+
+#btn-continue-shopping {
+    @include common.black-uppercase-button;
+    border-radius: 0px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#btn-tracking-order {
+    @include common.white-uppercase-button;
+    border-radius: 0px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#thankyou-detail-header {
+    background-color: var.$second-bg-color;
+    height: 48px;
+}
+
+.thankyou-header-menu-text {
+    font-size: 20px;
+}
+
+.total-items-text {
+    color: #273E80;
+}
+
+.thankyou-preview-item-img {
+    width: 150px;
+    height: 180px;
+}

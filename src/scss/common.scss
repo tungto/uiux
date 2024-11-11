@@ -17,6 +17,21 @@ body, html {
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 4px;
+    border: 0px;
+    padding: 0px;
+}
+
+@mixin white-uppercase-button {
+    background-color: inherit;
+    width: 100%;
+    height: 45px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 0px;
 }
 
 @mixin regular-1 {
