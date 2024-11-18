@@ -8,8 +8,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
 </head>
 
-<div class="popup-screen">
+<div class="popup-screen d-flex flex-row-reverse" id="popup-screen" style="display: none;">
 	<div class="popup-box">
+		<button id="close-popup" class="close-btn">&times;</button> <!-- Close Button -->
 		<h2>Popup box</h2>
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore illo ipsam, amet iure distinctio nesciunt
 			provident necessitatibus similique saepe? Sequi praesentium maiores itaque? Dolorum, exercitationem labore?
@@ -28,6 +29,7 @@
 			<a class="btn btn-primary" href="./pages/checkout.html">Checkout</a>
 			<a class="btn btn-primary" href="./pages/thankyou.html">Thank you</a>
 			<a class="btn btn-primary" href="./pages/track-your-order.html">Track Your Order</a>
+			<a class="btn btn-primary" id="toggle-popup">Cart</a>
 			<!-- </button> -->
 		</div>
 	</div>
@@ -35,6 +37,29 @@
 
 	<!-- Script section -->
 	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const toggleButton = document.getElementById('toggle-popup');
+			const popup = document.getElementById('popup-screen');
+			const closeButton = document.getElementById('close-popup');
+
+			// Show popup
+			toggleButton.addEventListener('click', function () {
+				popup.classList.add('show');
+			});
+
+			// Hide popup when clicking on the close button
+			closeButton.addEventListener('click', function () {
+				popup.classList.remove('show');
+			});
+
+			// Hide popup when clicking on the backdrop (outside the popup-box)
+			popup.addEventListener('click', function (event) {
+				if (event.target === popup) { // Check if the backdrop itself was clicked
+					popup.classList.remove('show');
+				}
+			});
+		});
+
 		fetch("./pages/components/navbar.html")
 			.then((response) => response.text())
 			.then((content) => {
