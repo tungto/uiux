@@ -6,21 +6,22 @@ fetch('./pages/components/cart.html')
   })
 
 function initPopup() {
-  let toggleButton = document.getElementById('toggle-cart')
-  let popup = document.getElementById('popup-screen')
-  let closeButton = document.getElementById('close-cart')
+  const toggleButton = document.querySelectorAll('#toggle-cart')
+  const popup = document.getElementById('popup-screen')
+  const closeButton = document.getElementById('close-cart')
 
   // Show popup
-  toggleButton.addEventListener('click', function () {
-    popup.classList.add('show')
+  toggleButton.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      popup.classList.add('show')
+    })
   })
-
   // Hide popup when clicking on the close button
   closeButton.addEventListener('click', function () {
     popup.classList.remove('show')
   })
 
-  // Hide popup when clicking on the backdrop (outside the popup-box)
+  // Hide popup when clicking outside the box
   popup.addEventListener('click', function (event) {
     if (event.target === popup) {
       popup.classList.remove('show')
