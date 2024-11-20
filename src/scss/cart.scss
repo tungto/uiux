@@ -1,3 +1,6 @@
+@use "./variables.scss" as var;
+@use "./common.scss" as common;
+
 .popup-screen {
     z-index: 9998;
     position: fixed;
@@ -24,6 +27,14 @@
 
 .close-btn {
     font-size: 34px;
+    cursor: pointer;
+}
+
+.cart-item .close-btn {
+    font-size: 28px;
+}
+
+#rm-btn {
     cursor: pointer;
 }
 
@@ -59,4 +70,32 @@
 
 .quantity-input:focus {
     outline: none;
+}
+
+#cart-notes textarea {
+    height: 160px;
+    max-height: 160px;
+    border-radius: 0px;
+}
+
+#cart-notes textarea::placeholder {
+    @include common.regular-1;
+    color: var.$border-gray;
+}
+
+.cart-total-container {
+    min-height: 150px
+}
+
+.cart-total-container .cart-heading {
+    font-size: 26px
+}
+
+.cart-total-container #btn-pay {
+    border-radius: 0px
+}
+
+.total-desc {
+    @include common.regular-1;
+    color: var.$border-gray;
 }
