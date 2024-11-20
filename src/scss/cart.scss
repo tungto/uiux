@@ -39,9 +39,13 @@
 }
 
 .quanity-box {
-    width: 150px;
     height: 40px;
     border: 1px solid black;
+}
+
+.quanity-box .ico {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .quantity-input {
@@ -51,4 +55,8 @@
     border: none;
     display: inline-block;
     vertical-align: middle;
+}
+
+.quantity-input:focus {
+    outline: none;
 }
