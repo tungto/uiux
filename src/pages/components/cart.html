@@ -2,7 +2,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira" rel="stylesheet">
 </head>
 
-<div class="popup-screen d-flex flex-row-reverse" id="popup-screen" style="display: none;">
+<div class="popup-screen d-flex flex-row-reverse overflow-auto" id="popup-screen" style="display: none;">
     <div class="popup-box pt-5 px-5 d-flex flex-column">
         <div class="d-flex row align-items-center">
             <div class="col cart-heading">My cart (02)</div>
@@ -83,7 +83,8 @@
                 <div class="cart-heading">Total: $15.600</div>
                 <div class="total-desc mt-2">Shipping & taxes calculated at checkout</div>
                 <div id="paynow" class="mt-4">
-                    <button id="btn-pay">Checkout</button>
+                    <a class="btn d-flex align-items-center justify-content-center" id="btn-pay"
+                        href="./pages/checkout.html">Checkout</a>
                 </div>
             </div>
         </div>
