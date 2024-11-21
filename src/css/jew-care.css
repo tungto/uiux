@@ -1,4 +1,8 @@
 /* Custom Format for Headings */
+
+a {
+    font-size: 0.6rem;
+}
 .heading-1 {
     font-weight: 500;
     font-size: 4rem;
@@ -55,14 +59,17 @@
     object-fit: scale-down;
 }
 
+.col-img-3 {
+    padding-left: 50px;
+}
 .col-img-3 img {
-    object-fit: scale-down;
+    object-fit: fill;
 }
 
 /* Border styles */
 .top-border {
     border: 1px solid #333333;
-    border-width: 1px 0px 1px 0px;
+    border-width: 1px 0px 0px 0px;
 }
 
 .full-border {

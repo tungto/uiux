@@ -12,14 +12,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>        
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/jew-care.css" />
 
 </head>
 
 <body>
+    <div id="navbarContainer"></div>
     <!-- WELCOME -->
     <div class="container border-top pt-5">
         <div class="row align-items-center ps-5">
@@ -41,7 +42,7 @@
 
     <!-- PRIMARY IMAGE -->
     <div class="container-fluid mt-3">
-        <img src="../../public/images/jew-care/1.svg">
+        <img src="../img/jew-care/1.svg">
     </div>
     <!-- /PRIMARY IMAGE -->
 
@@ -73,7 +74,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-img p-0">
-                <img src="../../public/images/jew-care/2.png">
+                <img src="../img/jew-care/2.png">
             </div>
         </div>
     </div>
@@ -92,7 +93,7 @@
         </div>
         <div class="row ps-5">
             <div class="col-lg-6 col-img-2 p-0">
-                <img src="../../public/images/jew-care/3.png">
+                <img src="../img/jew-care/3.png">
             </div>
             <div class="col-lg-6 p-4">
                 <div class="content-area-2">
@@ -135,13 +136,17 @@
 
 
     <!-- JEW CARAT -->
-    <div class="container top-border mt-3">
-        <div class="row align-items-center text-center d-flex justify-content-center pt-4">
-            <h5 class="heading-3" style="margin-bottom: 0px;">
-                Jewellery Carat
-            </h5>
+    <div class="container top-border mt-4">
+        <div class="row align-items-center pt-4 mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h5 class="heading-3 mb-0 text-center flex-grow-1">
+                    Jewellery Carat
+                </h5>
+                <a href="#CollapseSection" data-bs-toggle="collapse" id="toggleLink">Show details</a>
+            </div>
         </div>
-        <div class="row justify-content-center">
+        
+        <div class="collapse row justify-content-center mt-5" id="CollapseSection">
             <div class="col-lg-6 text-center align-items-center d-flex p-0">
                 <div class="row">
                     <h5 class="heading-3">Diamond Color Granding</h5>
@@ -159,7 +164,7 @@
                 </div>
             </div>
             <div class="col-5 col-img-3">
-                <img src="../../public/images/jew-care/4.png">
+                <img src="../img/jew-care/4.png">
             </div>
         </div>
     </div>
@@ -167,25 +172,78 @@
 
 
     <!-- COLOR-CLARITY-SHAPE -->
-    <div class="container mt-4 mb-4">
-        <div class="row justify-content-center">
-            <div class="col-6 d-flex justify-content-center">
-                <h5 class="heading-3">Jewelry Color</h5>
+    <div class="container border-top mt-4 mb-4">
+        <div class="row align-items-center pt-4 mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h5 class="heading-3 text-center flex-grow-1" style="margin-bottom: 0px;">
+                    Jewellery Color
+                </h5>
+                <a href="#CollapseSection-2" data-bs-toggle="collapse" id="toggleLink-2">Show details</a>
+            </div>
+        </div>
+        
+        <div class="collapse row justify-content-center mt-5" id="CollapseSection-2">
+            <div class="col-lg-6 text-center align-items-center d-flex p-0">
+                <div class="row">
+                    <h5 class="heading-3">Diamond Color Granding</h5>
+                    <p class="content-text">Gemological institutes grade white diamonds based on the absence of color. Though diamonds are primarily carbon, they often include trace elements that can affect their color. The most common trace element is nitrogen, which gives off a subtle shade of yellow. The more a diamond crystal is tinted with yellow, the more common they are which decreases their value. However, diamonds that posess a vivid yellow hue past "Z" are also a rarity and increase in price.</p>
+                    <p class="content-text">To grade white diamond color, gemological institutes use letters of the alphabet, starting from D (colorless) all the way to Z (light yellow). For natural diamonds, truly colorless options are quite rare and therefore you will see a price jump when compared to diamonds with a lesser color grading. For lab-grown, the ability to control the environment the crystal is formed in allows for colorless diamonds to be more common where the difference in price for higher and lower grade options is less substantial. You should note that subtle hints of color are difficult to see with the naked eye. The most common color ranges are D through F and G through J.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-5 col-img-3">
+                <img src="../img/jew-care/color.png">
             </div>
         </div>
     </div>
-    <div class="container border-top pt-4 mb-4">
-        <div class="row justify-content-center">
-            <div class="col-6 d-flex justify-content-center">
-                <h5 class="heading-3">Jewelry Clarity</h5>
+    <div class="container border-top mt-4 mb-4">
+        <div class="row align-items-center pt-4 mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h5 class="heading-3 text-center flex-grow-1" style="margin-bottom: 0px;">
+                    Jewellery Clarity
+                </h5>
+                <a href="#CollapseSection-3" data-bs-toggle="collapse" id="toggleLink-3">Show details</a>
+            </div>
+        </div>
+        
+        <div class="collapse row justify-content-center mt-5" id="CollapseSection-3">
+            <div class="col-lg-6 text-center align-items-center d-flex p-0">
+                <div class="row">
+                    <h5 class="heading-3">Diamond Color Granding</h5>
+                    <p class="content-text">From formation of the crystal to cutting and polishing, diamonds undergo a long journey, leaving an individual mark on each stone. The diamond’s internal markings are called inclusions, while surface irregularities are called blemishes. Together, they’re called clarity characteristics. Gemologists grade diamond clarity based on the absence of inclusions and blemishes. After thorough examination, they prescribe a rating from flawless (no inclusions or blemishes) to included (some clarity characteristics will be visible even with the naked eye).  
+                    </p>
+                    <p class="content-text">The fewer inclusions and blemishes the diamond has, the more valuable it is considered to be. Nonetheless, clarity characteristics are like a natural diamond's 'birth marks' and are extraordinary gemological manifestations of its formation.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-5 col-img-3">
+                <img src="../img/jew-care/clarity.png">
             </div>
         </div>
     </div>
-    <div class="container border-top pt-4 mb-4">
-        <div class="row justify-content-center">
-            <div class="col-6 d-flex justify-content-center">
-                <h5 class="heading-3">Jewelry Shape</h5>
+    <div class="container border-top mt-4 mb-4">
+        <div class="row align-items-center pt-4 mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h5 class="heading-3 text-center flex-grow-1" style="margin-bottom: 0px;">
+                    Jewellery Shape
+                </h5>
+                <a href="#CollapseSection-4" data-bs-toggle="collapse" id="toggleLink-4">Show details</a>
             </div>
+        </div>
+        
+        <div class="collapse justify-content-center mt-5" id="CollapseSection-4">
+            <div class="row text-center">
+                <h5 class="heading-3">Diamond Color Granding</h5>
+                <p class="content-text">
+                    Though round diamonds are the most popular shape, accounting for more than half sold today, there are quite a few others to consider. 
+                </p>
+            </div>
+            <div class="row">           
+                <img src="../img/jew-care/shape.png">
+            </div></div>
+ 
         </div>
     </div>
     <!-- /COLOR-CLARITY-SHAPE -->
@@ -226,3 +284,45 @@
     </div>
     <!-- /JEW CARE -->
 </body>
+
+<script>
+    // Event listeners for collapse show and hide events
+    document.getElementById('CollapseSection').addEventListener('shown.bs.collapse', function () {
+      document.getElementById('toggleLink').textContent = 'Hide details';
+    });
+  
+    document.getElementById('CollapseSection').addEventListener('hidden.bs.collapse', function () {
+      document.getElementById('toggleLink').textContent = 'Show details';
+    });
+
+
+    // Event listeners for collapse show and hide events
+    document.getElementById('CollapseSection-2').addEventListener('shown.bs.collapse', function () {
+      document.getElementById('toggleLink-2').textContent = 'Hide details';
+    });
+  
+    document.getElementById('CollapseSection-2').addEventListener('hidden.bs.collapse', function () {
+      document.getElementById('toggleLink-2').textContent = 'Show details';
+    });
+
+
+    // Event listeners for collapse show and hide events
+    document.getElementById('CollapseSection-3').addEventListener('shown.bs.collapse', function () {
+      document.getElementById('toggleLink-3').textContent = 'Hide details';
+    });
+  
+    document.getElementById('CollapseSection-3').addEventListener('hidden.bs.collapse', function () {
+      document.getElementById('toggleLink-3').textContent = 'Show details';
+    });
+
+
+    // Event listeners for collapse show and hide events
+    document.getElementById('CollapseSection-4').addEventListener('shown.bs.collapse', function () {
+      document.getElementById('toggleLink-4').textContent = 'Hide details';
+    });
+  
+    document.getElementById('CollapseSection-4').addEventListener('hidden.bs.collapse', function () {
+      document.getElementById('toggleLink-4').textContent = 'Show details';
+    });
+
+  </script>

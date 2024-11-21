@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+        body {
+            background-color: #f9f7f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .order-tracking-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .order-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .order-id {
+            font-size: 16px;
+            font-family: Karla;
+            font-weight: 400;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .progress-bar {
+            counter-reset: step;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            align-items: flex-start;
+        }
+
+
+        .progress-bar li {
+            list-style-type: none;
+            width: 20%;
+            position: relative;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .progress-bar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            /* border-color: rgba(225, 220, 214, 1); */
+            /* border-width: 1px;
+            border-style: solid; */
+            border-radius: 50%;
+            border: 1px solid #9b9b9b;
+            display: block;
+            text-align: center;
+            margin: 0 auto 10px auto;
+            border-radius: 50%;
+            background-color: #faf8f6;
+            /* font-size: 18px; */
+            /* line-height: 25.2px; */
+            /* font-family: "Karla"; */
+            /* color: black; */
+            /* font-weight: bold; */
+        }
+
+        .progress-bar li:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #9b9b9b;
+            top: 15px;
+            left: -50%;
+            z-index: -1;
+        }
+
+        .updates-title {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .updates-table {
+            width: 100%;
+            text-align: left;
+        }
+
+        .table th,
+        .table td {
+            font-size: 0.9rem;
+        }
+
+        .btn-continue {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 30px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            text-align: center;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-continue:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+        <ul class="progress-bar">
+            <li>Step 1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+    <div class="updates-title">Updates:</div>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Locations</th>
+                <th>Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>19/08/2022 - 16:00</td>
+                <td>6901 Hollywood Blvd, LA, CA 90028, US</td>
+                <td>Ready<br>Waiting for carrier</td>
+            </tr>
+            <tr>
+                <td>19/08/2022 - 10:00</td>
+                <td>-</td>
+                <td>Ordered</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="#" class="btn-continue">CONTINUE SHOPPING</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
