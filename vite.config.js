@@ -1,14 +1,6 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 
-// export default {
-// 	root: path.resolve(__dirname, 'src'),
-// 	server: {
-// 		port: 8080,
-// 		hot: true,
-// 	},
-// };
-
 export default defineConfig({
   // your config options
   root: path.resolve(__dirname, 'src'),

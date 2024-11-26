@@ -1,0 +1,48 @@
+.modal-header{
+	padding: 30px 50px;
+	border-bottom: 0;
+}
+.modal-title{
+	text-align: center;
+	width: 100%;
+	font-family: 'Della Respira';
+	
+}
+ #loginForm  input.form-control{
+	border: 0;
+	border-radius: 0;
+	border-bottom: 0.5px solid #999999;
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom: 10px;
+	color: #999999 
+ }
+
+ #loginForm  input.form-control::placeholder {  
+	color: #999999 
+ }
+
+ .submit-btn-container{
+	
+ }
+ #loginForm button.submit-btn{
+	background-color: black;
+	color: white;
+	border: none;
+	margin: 50px auto;
+	width: 80%;
+	display: block
+ }
+.btn-group-cta #forgotPasswordBtn{
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+.btn-link{
+	color: #333333;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Karla';
+	font-weight: 400;
+}

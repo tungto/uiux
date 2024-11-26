@@ -1,48 +1,156 @@
 <header class="main-nav">
-    <nav class="navbar navbar-expand-lg pt-0 pb-0">
-        <div class="container-fluid first-row-nav">
-            <div class="ps-5">
-                <img class="ps-2 pe-2" src="/img/facebook.svg">
-                <img class="ps-2 pe-2" src="/img/instagram.svg">
-                <img class="ps-2 pe-2" src="/img/pinterest.svg">
-            </div>
-            <div class="d-flex justify-content-center align-items-center collapse navbar-collapse"
-                id="navbarSupportedContent">
-                <a href="../../index.html">
-                    <img class="" src="/img/main-logo.svg" alt="Main Logo">
-                </a>
-            </div>
-            <div class="navbar-nav pe-5 me-auto">
-                <li class="nav-item">
-                    <a class="ps-2 pe-2 nav-link active" aria-current="page" href="#">Sign in</a>
-                </li>
-                <img class="ps-2 pe-2" src="/img/search.svg">
-                <img class="ps-2 pe-2" id="toggle-cart" src="/img/cart.svg">
-            </div>
-        </div>
-
-    </nav>
-    <div class="second-row-nav d-flex justify-content-center btm-border-gray">
-        <nav class="navbar navbar-expand-lg pt-0 pb-0">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item pe-2">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link active" aria-current="page" href="#">Shop All</a>
-                    </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link active" aria-current="page" href="#">Jewllery Guide</a>
-                    </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+  <nav class="navbar navbar-expand-lg pt-0 pb-0">
+    <div class="container-fluid first-row-nav">
+      <div class="ps-5">
+        <img class="ps-2 pe-2" src="/img/facebook.svg" />
+        <img class="ps-2 pe-2" src="/img/instagram.svg" />
+        <img class="ps-2 pe-2" src="/img/pinterest.svg" />
+      </div>
+      <div
+        class="d-flex justify-content-center align-items-center collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <a href="../../index.html">
+          <img class="" src="/img/main-logo.svg" alt="Main Logo" />
+        </a>
+      </div>
+      <div class="navbar-nav pe-5 me-auto">
+        <li class="nav-item">
+          <a
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            >Sign in</a
+          >
+        </li>
+        <img class="ps-2 pe-2" src="/img/search.svg" />
+        <img class="ps-2 pe-2" id="toggle-cart" src="/img/cart.svg" />
+      </div>
     </div>
+  </nav>
+  <div class="second-row-nav d-flex justify-content-center btm-border-gray">
+    <nav class="navbar navbar-expand-lg pt-0 pb-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item pe-2">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="../../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item ps-2 pe-2">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="../shop-all.html"
+              >Shop All</a
+            >
+          </li>
+          <li class="nav-item ps-2 pe-2">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Jewllery Guide</a
+            >
+          </li>
+          <li class="nav-item ps-2 pe-2">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
+<body>
+  <!-- Login Modal -->
+  <div
+    class="modal fade"
+    id="loginModal"
+    tabindex="-1"
+    aria-labelledby="loginModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Welcome to AGURI</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <button type="submit" class="submit-btn btn btn-primary">
+              Login
+            </button>
+            <div class="d-flex justify-content-center btn-group-cta">
+              <button
+                type="button"
+                class="btn btn-link p-0"
+                id="forgotPasswordBtn"
+              >
+                Forgot Password?
+              </button>
+              <button type="button" class="btn btn-link p-0" id="signUpBtn">
+                New Member? Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Handle form submission
+    document
+      .getElementById('loginForm')
+      .addEventListener('submit', function (e) {
+        e.preventDefault()
+        alert('Login successful!')
+      })
+
+    // Handle form submission
+    document
+      .getElementById('signupForm')
+      .addEventListener('submit', function (e) {
+        e.preventDefault()
+        alert('Account created successfully!')
+      })
+
+    // Handle "Sign In" button click
+    document
+      .getElementById('signInBtn')
+      .addEventListener('click', function (e) {
+        e.preventDefault()
+        alert('Redirecting to Sign In...')
+      })
+  </script>
+</body>
