@@ -101,10 +101,19 @@
 					<!-- Price Range Slider -->
 					<div class="filter-category">
 						<h6>Customer Your Price Range</h6>
-						<div class="d-flex align-items-center">
-							<span>$1,000</span>
-							<input type="range" class="form-range mx-3" min="1000" max="100000" step="1000">
-							<span>$100,000</span>
+						<div class="price-range">
+							<div class="slider-container">
+								<div class="slider-track"></div>
+								<input type="range" class="slider min" min="1000" max="100000" step="1000"
+									value="20000">
+								<input type="range" class="slider max" min="1000" max="100000" step="1000"
+									value="80000">
+								<div class="slider-range"></div>
+							</div>
+							<div class="price-labels">
+								<span class="price-label min-price">$1,000</span>
+								<span class="price-label max-price">$100,000</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -267,7 +276,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</main>
 		</div>
@@ -286,6 +295,49 @@
 			.then((content) => {
 				document.getElementById("footerContainer").innerHTML = content;
 			});
+	</script>
+	<!-- Thêm JavaScript ở đây -->
+	<script>
+		const minSlider = document.querySelector('.slider.min');
+		const maxSlider = document.querySelector('.slider.max');
+		const sliderRange = document.querySelector('.slider-range');
+
+		// Hàm cập nhật thanh đậm giữa hai chấm
+		function updateSliderRange() {
+			const minValue = parseInt(minSlider.value, 10);
+			const maxValue = parseInt(maxSlider.value, 10);
+
+			// Tính toán vị trí phần trăm
+			const percentMin = ((minValue - minSlider.min) / (minSlider.max - minSlider.min)) * 100;
+			const percentMax = ((maxValue - maxSlider.min) / (maxSlider.max - maxSlider.min)) * 100;
+
+			// Cập nhật vị trí và chiều rộng của thanh đậm
+			sliderRange.style.left = `${percentMin}%`;
+			sliderRange.style.width = `${percentMax - percentMin}%`;
+		}
+
+		// Hàm đảm bảo giá trị min không vượt qua giá trị max
+		function validateMinSlider() {
+			if (parseInt(minSlider.value, 10) >= parseInt(maxSlider.value, 10)) {
+				minSlider.value = parseInt(maxSlider.value, 10) - 1000; // Khoảng cách tối thiểu
+			}
+			updateSliderRange();
+		}
+
+		// Hàm đảm bảo giá trị max không nhỏ hơn giá trị min
+		function validateMaxSlider() {
+			if (parseInt(maxSlider.value, 10) <= parseInt(minSlider.value, 10)) {
+				maxSlider.value = parseInt(minSlider.value, 10) + 1000; // Khoảng cách tối thiểu
+			}
+			updateSliderRange();
+		}
+
+		// Gắn sự kiện kéo cho từng slider
+		minSlider.addEventListener('input', validateMinSlider);
+		maxSlider.addEventListener('input', validateMaxSlider);
+
+		// Khởi tạo thanh đậm khi tải trang
+		updateSliderRange();
 	</script>
 	<script type="module" src="/js/main.js"></script>
 </body>
