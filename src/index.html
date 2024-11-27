@@ -8,6 +8,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
 </head>
 
+<div id="popup-container"></div>
+
 <body class="content-wrapper">
 	<div id="navbarContainer"></div>
 	<div>
@@ -18,6 +20,8 @@
 			<a class="btn btn-primary" href="./pages/search.html">search</a>
 			<a class="btn btn-primary" href="./pages/checkout.html">Checkout</a>
 			<a class="btn btn-primary" href="./pages/thankyou.html">Thank you</a>
+			<a class="btn btn-primary" href="./pages/track-your-order.html">Track Your Order</a>
+			<a class="btn btn-primary" id="toggle-cart">Cart</a>
 			<!-- </button> -->
 		</div>
 	</div>
@@ -35,10 +39,12 @@
 			.then((content) => {
 				document.getElementById("footerContainer").innerHTML = content;
 			});
+
+
+
 	</script>
 	<script type="module" src="./js/main.js"></script>
+	<script type="module" src="./js/cart.js"></script>
 </body>
-
-
 
 </html>

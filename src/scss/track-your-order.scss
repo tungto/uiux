@@ -1,0 +1,66 @@
+@use "./variables.scss" as var;
+@use "./common.scss" as common;
+
+@mixin round-element {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-step-gray {
+    background-color: var.$second-bg-color;
+    @include round-element;
+}
+
+.round-step-white {
+    background-color: white;
+    @include round-element;
+    border: 1px solid var.$second-bg-color;
+}
+
+.round-step-gray,
+.round-step-white {
+    z-index: 2;
+}
+
+.track-your-order-container,
+.order-info-container {
+    width: 850px;
+    position: relative;
+}
+
+#progress {
+    position:absolute;
+    width: inherit;
+    z-index: 1;
+    height: 2px;
+    margin-top: 30px;
+}
+
+.track-your-order-container .regular-text:not(.updates-container .regular-text) {
+    color: #999999;
+}
+
+.updates-container .row, 
+.updates-container .col, 
+.track-your-order-container .row, 
+.track-your-order-container .col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.updates-header-text {
+    font-family: "Della Respira", sans-serif;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.track-order-continue-shopping #btn-continue-shopping {
+    width: 300px;
+    margin-top: 48px;
+    margin-bottom: 70px;
+}
