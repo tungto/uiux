@@ -14,25 +14,28 @@
     <link rel="stylesheet" href="../css/about-us.css" />
 </head>
 <body>
-    <!-- banner -->
     <div class="container">
-        <div class="row">
+        <!-- NAVBAR -->
+        <div id="navbar"></div>
+        
+        <!-- banner -->
+        <div class="row banner-box">
             <div class="col">
                 <div class="row">
                     <div class="col-9">
-                        <img src="../../public/images/about-us/1.png" alt="">
+                        <img src="/images/about-us/1.png" alt="">
                     </div>
                     <div class="col-3"></div>
                 </div>
             </div>
-            <div class="col banner-box">
-                <img src="../../public/images/about-us/2.png" alt="">
+            <div class="col">
+                <img src="/images/about-us/2.png" alt="">
             </div>
             <div class="col banner-img">
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-9">
-                        <img src="../../public/images/about-us/3.png" alt="">
+                        <img src="/images/about-us/3.png" alt="">
                     </div>
                 </div>
             </div>
@@ -48,8 +51,14 @@
             <div class="row">
                 <div class="col-4">
                     <p>Showroom address</p>
-                    <div class="smt">6901 Hollywood Blvd, Los Angeles, CA 90028, United States</div>
-                    <div class="smt">10 Northumberland St, London WC2N 5DB, United Kingdom</div>
+                    <div class="smt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        &nbsp;6901 Hollywood Blvd, Los Angeles, CA 90028, United States
+                    </div>
+                    <div class="smt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        &nbsp;10 Northumberland St, London WC2N 5DB, United Kingdom
+                    </div>
                 </div>
                 <div class="col"></div>
                 <div class="dear-content col-7">
@@ -68,7 +77,7 @@
         <!--our-vision-->
         <div class="row py-5">
             <div class="col-6">
-                <img class="vision-img mb-5" src="../../public/images/about-us/4.png"/>
+                <img class="vision-img mb-5" src="/images/about-us/4.png"/>
                 <h5 class="my-3">Our Vision</h5>
                 <div>
                     AGURI Jewelry envisions a world where elegance meets sustainability, 
@@ -79,14 +88,14 @@
                 </div>
             </div>
             <div class="col-6">
-                <img src="../../public/images/about-us/5.png" alt="">
+                <img src="/images/about-us/5.png" alt="">
             </div>
         </div>
     
         <!--our-mission-->
         <div class="row py-5">
             <div class="col">
-                <img src="../../public/images/about-us/6.png" />
+                <img src="/images/about-us/6.png" />
             </div>
             <div class="col pt-5">
                 <h5 class="mb-3">Our Mission</h5>
@@ -97,7 +106,26 @@
             </div>
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // header, footer
+        fetch("./components/navbar-component.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("navbar").innerHTML = content;
+            });
+        fetch("./components/footer-component.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("footer").innerHTML = content;
+            });
+
+        // other actions
+    </script>
 </body>
 </html>

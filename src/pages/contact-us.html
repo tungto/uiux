@@ -15,6 +15,9 @@
 </head>
 <body>
     <div class="container">
+        <!-- NAVBAR -->
+        <div id="navbar"></div>
+        
         <div class="row">
             <div class="col-4 text-start get-info">
                 <h2>Let's get in touch</h2>
@@ -31,7 +34,7 @@
     <div class="row my-5">
         <!--BANNER-->
         <div class="banner-img col-5">
-            <img src="../../public/images/contact/banner.png">
+            <img src="/images/contact/banner.png">
         </div>
 
         <!--contact form here-->
@@ -98,12 +101,28 @@
     
     <!--Map here-->
     <div class="map-info">
-        <img class="map-img" src="../../public/images/contact/map.png" alt="">
+        <img class="map-img" src="/images/contact/map.png" alt="">
     </div>  
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
 
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
+        // header, footer
+        fetch("./components/navbar-component.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("navbar").innerHTML = content;
+            });
+        fetch("./components/footer-component.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("footer").innerHTML = content;
+            });
+
+        // other actions
         function handleSendMessage() {
             const form = document.getElementById('messageForm');
             if (form.checkValidity()) {
