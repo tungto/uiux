@@ -1,79 +1,79 @@
 /*CATEGORY*/
 .sub-cate-box:hover > .sub-cate-img {
-    transition: 0.5s;
-    transform: scale(108%);
-    filter: brightness(89%);
+  transition: 0.5s;
+  transform: scale(108%);
+  filter: brightness(89%);
 }
 .sub-cate-box {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .sub-name {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 .category-side-bar .btn {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 .category-side-bar .btn:hover {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 .category-main {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 .category-main a img:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .category-main .card {
-    border: none;
-    background-color: #faf8f6;
+  border: none;
+  background-color: #faf8f6;
 }
 .category-main h6 {
-    font-size: small;
+  font-size: small;
 }
 .cate-product {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 /*Featured Product*/
 .featured {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .overlay {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  opacity: 0;
 }
 .featured:hover > .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 .featured:hover > .featured-img {
-    transform: scale(108%);
-    transition: 0.6s all;
+  transform: scale(108%);
+  transition: 0.6s all;
 }
 
 .back-to-top {
-    color: #999;
+  color: #999;
 }
 
 .back-to-top:hover {
-    color: #000;
+  color: #000;
 }
 .category-bottom {
-    margin-bottom: 60px;
-    margin-top: 60px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 /*sticky category sid bar*/
 div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding-bottom: 60px;
-    padding-top: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-bottom: 60px;
+  padding-top: 40px;
 }
