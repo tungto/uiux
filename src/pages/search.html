@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search Product Found</title>
+	<link href="https://fonts.googleapis.com/css2?family=Karla&family=Della+Respira&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div id="navbarContainer"></div>
+
+	<!-- Main Content -->
+	<div class="container my-5">
+		<!-- Search Bar and Heading -->
+		<div class="text-center mb-4">
+			<div class="mb-3">
+				<div class="search-bar d-flex align-items-center">
+					<div class="search-icon-wrapper">
+						<img src="/img/search.svg" alt="Search Icon" class="search-icon">
+					</div>
+					<div class="search-input-wrapper flex-grow-1">
+						<input type="text" class="form-control w-100" placeholder="Search for products, e.g., RING"
+							value="RING">
+					</div>
+				</div>
+			</div>
+			<h3>Your search for "<span class="text-primary">RING</span>" revealed the following:</h3>
+		</div>
+
+		<!-- Collections Section -->
+		<div class="collections-section mb-4">
+			<h5 class="mb-3">Collections</h5>
+			<ul class="list-unstyled d-flex gap-3">
+				<li><a href="#" class="text-decoration-none">Spring Collection</a></li>
+				<li><a href="#" class="text-decoration-none">Eternity Collection</a></li>
+				<li><a href="#" class="text-decoration-none">Minimal Collection</a></li>
+			</ul>
+		</div>
+
+		<div class="row gx-4">
+			<!-- Left Section -->
+			<aside class="col-md-3">
+				<!-- Filter Section -->
+				<div class="filter-section p-3 border rounded">
+					<div class="filter-header d-flex align-items-center">
+						<img src="/img/slider.svg" alt="Filter Icon" class="filter-icon">
+						<h5 class="mb-0 flex-grow-1">Filter</h5>
+						<img src="/img/vector.svg" alt="Filter arrow" class="filter-arrow">
+					</div>
+
+					<!-- Jewellery Filter -->
+					<div class="filter-category mb-3">
+						<h6>Jewellery</h6>
+						<div class="filter-option">
+							<input type="checkbox" id="natural-jewelry" class="checkbox">
+							<label for="natural-jewelry">Natural jewelry</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="lab-grown-jewelry" class="checkbox">
+							<label for="lab-grown-jewelry">Lab-grown jewelry</label>
+						</div>
+					</div>
+
+					<!-- Materials Filter -->
+					<div class="filter-category mb-3">
+						<h6>Materials</h6>
+						<div class="filter-option">
+							<input type="checkbox" id="gold" class="checkbox">
+							<label for="gold">Gold</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="rose-gold" class="checkbox">
+							<label for="rose-gold">Rose Gold</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="white-gold" class="checkbox">
+							<label for="white-gold">White Gold</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="sterling-silver" class="checkbox">
+							<label for="sterling-silver">Sterling Silver</label>
+						</div>
+					</div>
+
+					<!-- Price Filter -->
+					<div class="filter-category mb-3">
+						<h6>Price</h6>
+						<div class="filter-option">
+							<input type="checkbox" id="under-500" class="checkbox">
+							<label for="under-500">$500 & Under</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="500-1000" class="checkbox">
+							<label for="500-1000">$500 - $1,000</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="1000-2000" class="checkbox">
+							<label for="1000-2000">$1,000 - $2,000</label>
+						</div>
+						<div class="filter-option">
+							<input type="checkbox" id="2000-5000" class="checkbox">
+							<label for="2000-5000">$2,000 - $5,000</label>
+						</div>
+					</div>
+
+					<!-- Price Range Slider -->
+					<div class="filter-category">
+						<h6>Customer Your Price Range</h6>
+						<div class="price-range">
+							<div class="slider-container">
+								<div class="slider-track"></div>
+								<input type="range" class="slider min" min="100" max="100000" step="100" value="100">
+								<input type="range" class="slider max" min="100" max="100000" step="1000" value="80000">
+								<div class="slider-range"></div>
+							</div>
+							<div class="price-labels">
+								<span class="price-label min-price">$100</span>
+								<span class="price-label max-price">$100,000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<!-- Product Grid Section -->
+			<main class="col-md-9">
+				<div class="d-flex justify-content-between align-items-center mb-3">
+					<h5 class="mb-0">12 Results Found</h5>
+					<select class="form-select w-auto">
+						<option selected>Featured</option>
+						<option value="1">Price: Low to High</option>
+						<option value="2">Price: High to Low</option>
+					</select>
+				</div>
+
+				<div id="productGrid" class="row g-4"></div>
+				<!-- Placeholder Products -->
+
+				<div class="product-footer text-center mt-4">
+					<p class="showing-text">Showing <span id="currentCount">60</span> of <span
+							id="totalCount">180</span></p>
+					<button class="btn btn-dark load-more-btn">LOAD MORE</button>
+					<a href="#navbarContainer" class="back-to-top d-block mt-2">Back to top</a>
+				</div>
+
+		</div>
+		</main>
+	</div>
+	</div>
+
+	<!-- Javascript -->
+
+	<script src="/js/search-slider.js"></script>
+	<script src="/js/search-product-img-loader.js"></script>
+	<footer id="footerContainer" class="main-footer"></footer>
+	<script>
+		fetch("./components/navbar.html")
+			.then((response) => response.text())
+			.then((content) => {
+				document.getElementById("navbarContainer").innerHTML = content;
+			});
+		fetch("./components/footer.html")
+			.then((response) => response.text())
+			.then((content) => {
+				document.getElementById("footerContainer").innerHTML = content;
+			});
+	</script>
+	<script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
