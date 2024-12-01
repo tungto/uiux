@@ -65,44 +65,64 @@ input[type="text"] {
 }
 
 .search-bar {
-    display: flex; /* Sắp xếp hàng ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center; /* Căn giữa toàn bộ search-bar */
-    width: 50%; /* Giảm chiều ngang */
-    margin: 0 auto; /* Căn giữa search-bar */
-    gap: 0.2rem; /* Giảm khoảng cách giữa icon và input */
+    display: flex;
+    /* Sắp xếp hàng ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa toàn bộ search-bar */
+    width: 50%;
+    /* Giảm chiều ngang */
+    margin: 0 auto;
+    /* Căn giữa search-bar */
+    gap: 0.2rem;
+    /* Giảm khoảng cách giữa icon và input */
 }
 
 .search-icon-wrapper {
-    flex-shrink: 0; /* Đảm bảo icon không bị thu nhỏ */
+    flex-shrink: 0;
+    /* Đảm bảo icon không bị thu nhỏ */
 }
 
 .search-icon {
-    width: 24px; /* Kích thước icon */
+    width: 24px;
+    /* Kích thước icon */
     height: 24px;
 }
+
 .search-input-wrapper {
-    flex-grow: 1; /* Cho phép ô input chiếm không gian còn lại */
+    flex-grow: 1;
+    /* Cho phép ô input chiếm không gian còn lại */
 }
 
 .search-input-wrapper input {
-    font-size: 1rem; /* Kích thước chữ */
-    border: none; /* Bỏ viền mặc định */
-    border-bottom: 1px solid black; /* Dòng kẻ mỏng hơn */
-    outline: none; /* Bỏ viền khi focus */
-    padding: 0.2rem; /* Giảm khoảng cách bên trong */
+    font-size: 1rem;
+    /* Kích thước chữ */
+    border: none;
+    /* Bỏ viền mặc định */
+    border-bottom: 1px solid black;
+    /* Dòng kẻ mỏng hơn */
+    outline: none;
+    /* Bỏ viền khi focus */
+    padding: 0.2rem;
+    /* Giảm khoảng cách bên trong */
 }
+
 .search-input-wrapper input::placeholder {
-    color: #666; /* Màu placeholder */
-    font-style: italic; /* Placeholder in nghiêng */
+    color: #666;
+    /* Màu placeholder */
+    font-style: italic;
+    /* Placeholder in nghiêng */
 }
 
 .search-input-wrapper input:focus {
-    border-bottom: 1px solid #333; /* Đổi màu viền khi focus */
+    border-bottom: 1px solid #333;
+    /* Đổi màu viền khi focus */
 }
 
 .text-primary {
-    color: black !important; /* Đổi màu chữ thành đen và sử dụng !important để ghi đè nếu cần */
+    color: black !important;
+    /* Đổi màu chữ thành đen và sử dụng !important để ghi đè nếu cần */
 }
 
 /* Filter Section */
