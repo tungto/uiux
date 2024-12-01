@@ -12,6 +12,7 @@ import path from 'path'
 export default defineConfig({
   // your config options
   root: path.resolve(__dirname, 'src'),
+  publicDir: path.resolve(__dirname, 'public'), // Set public directory
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

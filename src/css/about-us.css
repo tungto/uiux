@@ -1,0 +1,21 @@
+.banner-box {
+  position: relative;
+}
+.banner-img {
+  background-position-y: center;
+}
+.banner-text {
+  position: absolute;
+  bottom: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjusts the alignment to the exact center */
+  text-align: center;
+  margin: 0;
+}
+.vision-img {
+  width: 50%;
+  height: 50%;
+}
