@@ -195,7 +195,7 @@ input[type="text"] {
 
 /* Product Cards */
 .card {
-    border: 1px solid var.$border-gray; // Use consistent border color
+    border: none;
     border-radius: 0.5rem;
     transition: transform 0.2s, box-shadow 0.2s;
 
@@ -206,11 +206,18 @@ input[type="text"] {
 
     .card-body {
         text-align: center;
+        background-color: var.$main-bg-color;
     }
 
     .card-title {
         font-size: 1rem;
         font-weight: bold;
+    }
+
+    .card-img-top {
+        height: 240px; // Giảm chiều cao ảnh
+        object-fit: cover; // Cắt ảnh vừa khung
+        // margin-bottom: 0.3rem; // Giảm khoảng cách dưới ảnh
     }
 
     .card-text {
