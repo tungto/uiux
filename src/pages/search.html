@@ -22,7 +22,8 @@
 						<img src="/img/search.svg" alt="Search Icon" class="search-icon">
 					</div>
 					<div class="search-input-wrapper flex-grow-1">
-						<input type="text" class="form-control w-100" placeholder="Search for products, e.g., RING" value="RING">
+						<input type="text" class="form-control w-100" placeholder="Search for products, e.g., RING"
+							value="RING">
 					</div>
 				</div>
 			</div>
@@ -150,8 +151,11 @@
 	</div>
 	</div>
 
-	<footer id="footerContainer" class="main-footer"></footer>
+	<!-- Javascript -->
 
+	<script src="/js/search-slider.js"></script>
+	<script src="/js/search-product-img-loader.js"></script>
+	<footer id="footerContainer" class="main-footer"></footer>
 	<script>
 		fetch("./components/navbar.html")
 			.then((response) => response.text())
@@ -164,73 +168,6 @@
 				document.getElementById("footerContainer").innerHTML = content;
 			});
 	</script>
-	<!-- Thêm JavaScript ở đây -->
-	<script>
-		const minSlider = document.querySelector('.slider.min');
-		const maxSlider = document.querySelector('.slider.max');
-		const sliderRange = document.querySelector('.slider-range');
-
-		// Hàm cập nhật thanh đậm giữa hai chấm
-		function updateSliderRange() {
-			const minValue = parseInt(minSlider.value, 10);
-			const maxValue = parseInt(maxSlider.value, 10);
-
-			// Tính toán vị trí phần trăm
-			const percentMin = ((minValue - minSlider.min) / (minSlider.max - minSlider.min)) * 100;
-			const percentMax = ((maxValue - maxSlider.min) / (maxSlider.max - maxSlider.min)) * 100;
-
-			// Cập nhật vị trí và chiều rộng của thanh đậm
-			sliderRange.style.left = `${percentMin}%`;
-			sliderRange.style.width = `${percentMax - percentMin}%`;
-		}
-
-		// Hàm đảm bảo giá trị min không vượt qua giá trị max
-		function validateMinSlider() {
-			if (parseInt(minSlider.value, 10) >= parseInt(maxSlider.value, 10)) {
-				minSlider.value = parseInt(maxSlider.value, 10) - 1000; // Khoảng cách tối thiểu
-			}
-			updateSliderRange();
-		}
-
-		// Hàm đảm bảo giá trị max không nhỏ hơn giá trị min
-		function validateMaxSlider() {
-			if (parseInt(maxSlider.value, 10) <= parseInt(minSlider.value, 10)) {
-				maxSlider.value = parseInt(minSlider.value, 10) + 1000; // Khoảng cách tối thiểu
-			}
-			updateSliderRange();
-		}
-
-		// Gắn sự kiện kéo cho từng slider
-		minSlider.addEventListener('input', validateMinSlider);
-		maxSlider.addEventListener('input', validateMaxSlider);
-
-		// Khởi tạo thanh đậm khi tải trang
-		updateSliderRange();
-	</script>
-
-	<script>
-		const images = [
-			'1.png', '2.png', '3.png', '4.png', '5.png',
-			'6.png', '7.png', '8.png', '9.png'
-		];
-
-		const productGrid = document.getElementById('productGrid');
-		images.forEach(image => {
-			const productHTML = `
-        <div class="col-md-4">
-            <div class="card">
-                <img src="/images/rings/${image}" class="card-img-top" alt="Product Image">
-                <div class="card-body">
-                    <h6 class="card-title">Diamond rings</h6>
-                    <p class="card-text">$240.00</p>
-                </div>
-            </div>
-        </div>
-    `;
-			productGrid.innerHTML += productHTML;
-		});
-	</script>
-
 	<script type="module" src="/js/main.js"></script>
 </body>
 
