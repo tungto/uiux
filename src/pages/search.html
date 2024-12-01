@@ -104,14 +104,14 @@
 						<div class="price-range">
 							<div class="slider-container">
 								<div class="slider-track"></div>
-								<input type="range" class="slider min" min="1000" max="100000" step="1000"
-									value="20000">
-								<input type="range" class="slider max" min="1000" max="100000" step="1000"
+								<input type="range" class="slider min" min="100" max="100000" step="100"
+									value="100">
+								<input type="range" class="slider max" min="100" max="100000" step="1000"
 									value="80000">
 								<div class="slider-range"></div>
 							</div>
 							<div class="price-labels">
-								<span class="price-label min-price">$1,000</span>
+								<span class="price-label min-price">$100</span>
 								<span class="price-label max-price">$100,000</span>
 							</div>
 						</div>
@@ -133,6 +133,12 @@
 				<div id="productGrid" class="row g-4"></div>
 				<!-- Placeholder Products -->
 
+				<div class="product-footer text-center mt-4">
+					<p class="showing-text">Showing <span id="currentCount">60</span> of <span
+							id="totalCount">180</span></p>
+					<button class="btn btn-dark load-more-btn">LOAD MORE</button>
+					<a href="#navbarContainer" class="back-to-top d-block mt-2">Back to top</a>
+				</div>
 
 		</div>
 		</main>
@@ -211,7 +217,7 @@
                 <img src="/images/rings/${image}" class="card-img-top" alt="Product Image">
                 <div class="card-body">
                     <h6 class="card-title">Diamond rings</h6>
-                    <p class="card-text">$150.00</p>
+                    <p class="card-text">$240.00</p>
                 </div>
             </div>
         </div>

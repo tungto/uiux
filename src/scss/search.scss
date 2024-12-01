@@ -148,10 +148,12 @@ input[type="text"] {
             appearance: none;
             background: transparent;
             z-index: 2;
-            pointer-events: auto; /* Cho phép tương tác */
+            pointer-events: auto;
+            /* Cho phép tương tác */
 
             &.min {
-                z-index: 3; /* Ưu tiên tương tác cho slider min */
+                z-index: 3;
+                /* Ưu tiên tương tác cho slider min */
             }
 
             &::-webkit-slider-thumb {
@@ -223,5 +225,41 @@ input[type="text"] {
     .card-text {
         font-size: 0.9rem;
         color: #333;
+    }
+}
+
+.product-footer {
+    .showing-text {
+        font-size: 0.9rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .load-more-btn {
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .back-to-top {
+        font-size: 0.9rem;
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
