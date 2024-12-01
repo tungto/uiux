@@ -37,11 +37,31 @@ body {
 }
 
 /* Search Bar */
+.text-center h3 {
+    font-family: 'Della Respira', serif; // Đổi font chữ thành Della Respira
+    font-size: 1.5rem; // Tùy chỉnh kích thước chữ nếu cần
+    font-weight: bold; // Tùy chỉnh độ đậm (nếu cần)
+}
+
 input[type="text"] {
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    border: 1px solid var.$border-gray; // Use the defined border color for consistency
+    background-color: var.$main-bg-color; // Đổi màu nền giống màu background của trang
+    border: none; // Bỏ viền mặc định
+    border-radius: 0; // Bỏ bo tròn góc
+    border-bottom: 2px solid black; // Thêm dòng kẻ đen dài dưới input
+    padding: 0.2rem;
+    font-size: 1rem;
+    outline: none; // Bỏ viền xanh khi focus
     width: 100%;
+
+    &:focus {
+        outline: none; // Bỏ viền khi focus
+        border-bottom: 2px solid #333; // Màu viền đen đậm khi focus
+    }
+
+    &::placeholder {
+        color: #666; // Màu placeholder nhẹ hơn
+        font-style: italic;
+    }
 }
 
 /* Filter Section */
