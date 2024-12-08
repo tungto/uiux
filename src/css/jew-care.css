@@ -1,5 +1,7 @@
 .jew-care-container a {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .jew-care-container .heading-1 {
@@ -26,7 +28,7 @@
 }
 
 .jew-care-container .content-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: 'Karla';
   margin-bottom: 0px;
@@ -67,7 +69,7 @@
 }
 
 .jew-care-container .full-border {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 0.5px solid #333333;
 }
 
 .jew-care-container .border-top {
@@ -77,4 +79,8 @@
 .jew-care-container li {
   list-style-type: disc;
   margin-left: 25px;
+}
+
+.bg-section-1 {
+  /* background-image: url('../img/'); */
 }
