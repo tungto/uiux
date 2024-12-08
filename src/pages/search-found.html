@@ -10,10 +10,10 @@
 </head>
 
 <body>
-	<div id="navbarContainer"></div>
+	 <div id="navbar"></div>
 
 	<!-- Main Content -->
-	<div class="container my-5">
+	<div class="container my-5 search-container">
 		<!-- Search Bar and Heading -->
 		<div class="text-center mb-4">
 			<div class="mb-3">
@@ -155,7 +155,10 @@
 
 	<script src="/js/search-slider.js"></script>
 	<script src="/js/search-product-img-loader.js"></script>
-	<footer id="footerContainer" class="main-footer"></footer>
+
+	 <footer id="footer"></footer>
+
+	<script src="../js/fetchLayout.js"></script>
 	<script>
 		fetch("./components/navbar.html")
 			.then((response) => response.text())

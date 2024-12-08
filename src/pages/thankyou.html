@@ -10,7 +10,7 @@
 </head>
 
 <body class="content-wrapper">
-    <div id="navbarContainer"></div>
+     <div id="navbar"></div>
     <div class="container thankyou-container d-flex justify-content-center text-center pt-5">
         <div>
             <div class="thankyou-heading text-center">
@@ -162,21 +162,10 @@
     </div>
 
     </div>
-    <footer id="footerContainer" class="main-footer"></footer>
-
+     <footer id="footer"></footer>
+    <script src="../js/fetchLayout.js"></script>
     <!-- Script section -->
-    <script>
-        fetch("./components/navbar.html")
-            .then((response) => response.text())
-            .then((content) => {
-                document.getElementById("navbarContainer").innerHTML = content;
-            });
-        fetch("./components/footer.html")
-            .then((response) => response.text())
-            .then((content) => {
-                document.getElementById("footerContainer").innerHTML = content;
-            });
-    </script>
+     
     <script type="module" src="/js/main.js"></script>
 </body>
 
