@@ -1,55 +1,55 @@
-<header class="section top-page">
-<div class="header card-header border-0">
-    <div class="row header-inner">
-    <!--top-page-left-->
-    <div class="col-4">
-        <ul class="d-flex justify-content-start">
-            <li class="py-1">
-                <a href="https://www.facebook.com/aguri-jewellery">
-                    <img class="ps-2 pe-2" src="/img/facebook.svg">
-                </a>
-            </li>
-            <li class="py-1 px-3">
-                <a href="https://www.instagram.com/aguri-jewellery">
-                    <img class="ps-2 pe-2" src="/img/instagram.svg">
-                </a>
-            </li>
-            <li class="py-1">
-                <a href="https://www.pinterest.com/aguri-jewellery">
-                    <img class="ps-2 pe-2" src="/img/pinterest.svg">
-                </a>
-            </li>
-        </ul>
+<header class="section top-page container">
+    <div class="header card-header border-0">
+        <div class="row header-inner">
+        <!--top-page-left-->
+        <div class="col-4">
+            <ul class="d-flex justify-content-start">
+                <li class="py-1">
+                    <a href="https://www.facebook.com/aguri-jewellery">
+                        <img class="ps-2 pe-2" src="/img/facebook.svg">
+                    </a>
+                </li>
+                <li class="py-1 px-3">
+                    <a href="https://www.instagram.com/aguri-jewellery">
+                        <img class="ps-2 pe-2" src="/img/instagram.svg">
+                    </a>
+                </li>
+                <li class="py-1">
+                    <a href="https://www.pinterest.com/aguri-jewellery">
+                        <img class="ps-2 pe-2" src="/img/pinterest.svg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--logo-->
+        <div class="col-4 d-flex justify-content-center">
+            <a href="/">
+                <img id="logo" src="/img/main-logo.svg" alt="aguri-logo" />
+            </a>
+        </div>
+        <!--top-page-right-->
+        <div class="col-4">
+            <ul class="d-flex justify-content-end">
+                <li class="py-1">
+                    <!--Modal Sign In Button-->
+                    <div class="sign-in" data-bs-toggle="modal" type="button" data-bs-target="#sign-in">
+                        Sign in
+                    </div>
+                </li>
+                <li class="py-1 px-3">
+                    <img class="ps-2 pe-2" src="/img/search.svg" (click)="search()">
+                </li>
+                <li class="py-1">
+                    <img class="ps-2 pe-2" id="toggle-cart" src="/img/cart.svg">
+                </li>
+            </ul>
+        </div>
+        </div>
     </div>
-    <!--logo-->
-    <div class="col-4 d-flex justify-content-center">
-        <a href="/">
-            <img id="logo" src="/img/main-logo.svg" alt="aguri-logo" />
-        </a>
-    </div>
-    <!--top-page-right-->
-    <div class="col-4">
-        <ul class="d-flex justify-content-end">
-            <li class="py-1">
-                <!--Modal Sign In Button-->
-                <div class="sign-in" data-bs-toggle="modal" type="button" data-bs-target="#sign-in">
-                    Sign in
-                </div>
-            </li>
-            <li class="py-1 px-3">
-                <img class="ps-2 pe-2" src="/img/search.svg" (click)="search()">
-            </li>
-            <li class="py-1">
-                <img class="ps-2 pe-2" id="toggle-cart" src="/img/cart.svg">
-            </li>
-        </ul>
-    </div>
-    </div>
-</div>
 </header>
 
 <!--NAVBAR-->
-<nav class="section header">
+<nav class="section header navbar-container">
     <div class="container navbar-here border-0">
     <ul class="nav justify-content-center">
         <li><a href="/">Home</a></li>

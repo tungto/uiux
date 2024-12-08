@@ -1,12 +1,14 @@
-.banner-box {
+.about-us-container {
   position: relative;
 }
-.banner-img {
+
+.about-us-container .banner-img {
   background-position-y: center;
 }
-.banner-text {
+
+.about-us-container .banner-text {
   position: absolute;
-  bottom: 50%; /* Center vertically */
+  bottom: 80%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(
     -50%,
@@ -15,7 +17,8 @@
   text-align: center;
   margin: 0;
 }
-.vision-img {
+
+.about-us-container .vision-img {
   width: 50%;
   height: 50%;
 }

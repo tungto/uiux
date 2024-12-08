@@ -1,28 +1,28 @@
 @use "./variables.scss" as var;
 
-.main-nav {
-    background-color: var.$main-bg-color;
-    height: 160px;
-}
+// .main-nav {
+//     background-color: var.$main-bg-color;
+//     height: 160px;
+// }
 
-.first-row-nav {
-    height: 90px;
-}
+// .first-row-nav {
+//     height: 90px;
+// }
 
-.second-row-nav {
-    height: 70px;
-}
+// .second-row-nav {
+//     height: 70px;
+// }
 
-.btm-border-gray {
-    border-bottom: 1px solid var.$border-gray;
-}
+// .btm-border-gray {
+//     border-bottom: 1px solid var.$border-gray;
+// }
 
-nav a {
-    font-weight: 500px;
-    font-size: 18px;
-    line-height: 25px;
-}
+// nav a {
+//     font-weight: 500px;
+//     font-size: 18px;
+//     line-height: 25px;
+// }
 
-.main-nav img:hover {
-    cursor: pointer;
-}
+// .main-nav img:hover {
+//     cursor: pointer;
+// }
