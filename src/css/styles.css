@@ -273,7 +273,8 @@ nav.navbar-container li:nth-child(1) {
 
 /*FOOTER*/
 .card-footer {
-  padding: 100px 75px;
+  padding: 20px 75px;
+  padding-top: 50px;
   background-color: #e1dcd6;
   font-family: 'Karla';
   /* opacity: 60%; */
@@ -293,7 +294,7 @@ nav.navbar-container li:nth-child(1) {
 }
 .subscribe input {
   background-color: #faf8f6 !important;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .subscribe-form button {
   width: 100%;
