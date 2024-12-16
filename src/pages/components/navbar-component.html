@@ -37,7 +37,8 @@
                     </div>
                 </li>
                 <li class="py-1 px-3">
-                    <img class="ps-2 pe-2" src="/img/search.svg" (click)="search()">
+                    <a href="../../pages/search-found.html"><img class="ps-2 pe-2" src="/img/search.svg" (click)="search()"></a>
+                    
                 </li>
                 <li class="py-1">
                     <img class="ps-2 pe-2" id="toggle-cart" src="/img/cart.svg">
@@ -53,9 +54,24 @@
     <div class="container navbar-here border-0">
     <ul class="nav justify-content-center">
         <li><a href="/">Home</a></li>
-        <li>
+        <!-- <li>
             <a href="/pages/shop-all.html">Shop All</a>
-        </li>
+
+        </li> -->
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/pages/shop-all.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop All
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/pages/rings.html">Rings</a>
+              <a class="dropdown-item" href="/pages/necklaces.html">Necklaces</a>
+              <a class="dropdown-item" href="/pages/necklaces.html">Bracelets</a>
+              <a class="dropdown-item" href="/pages/necklaces.html">Earrings</a>
+               
+            </div>
+          </li>
+        
         <li class="nav-item nav-test">
             <a href="/pages/jew-care.html">Jewellery Guide</a>
         </li>
