@@ -1,7 +1,10 @@
-fetch('./pages/components/cart.html')
+fetch('../pages/components/cart.html')
   .then((response) => response.text())
   .then((html) => {
-    document.getElementById('popup-container').innerHTML = html
+    console.log(html)
+    document.getElementById('cart-popup-container').innerHTML = html
+  })
+  .then(() => {
     initPopup()
     initCartFunction()
   })

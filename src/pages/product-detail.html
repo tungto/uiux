@@ -11,8 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+  <div id="cart-popup-container"></div>
   <body>
     <div id="navbar"></div>
+
     <section _ngcontent-fnl-c7="" class="container product-detail-container">
       <div _ngcontent-fnl-c8="" id="quickview" class="modal fade">
         <div
@@ -534,15 +536,16 @@
                         _ngcontent-fnl-c15=""
                         class="col-6 offcanvas-checkbox"
                       >
-                        <button
+                        <a
                           _ngcontent-fnl-c15=""
                           type="button"
                           routerlink="/check-out"
                           class="btn btn-sec btnlg mt-3 w-100"
                           tabindex="0"
+                          href="../pages/checkout.html"
                         >
                           Checkout
-                        </button>
+                        </a>
                       </div>
                       <div _ngcontent-fnl-c15="" class="col-6 offcanvas-cart">
                         <button
@@ -551,6 +554,9 @@
                           routerlink="/cart"
                           class="btn btn-pri btnlg mt-3 w-100"
                           tabindex="0"
+                          id="toggle-cart"
+                          aria-label="Close"
+                          data-bs-dismiss="offcanvas"
                         >
                           View Cart
                         </button>
@@ -1685,6 +1691,7 @@
           document.getElementById('footer').innerHTML = content
         })
     </script>
+    <script type="module" src="../../js/cart.js"></script>
     <script type="module" src="../js/main.js"></script>
   </body>
 </html>

@@ -1,93 +1,120 @@
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Della+Respira" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Della+Respira"
+    rel="stylesheet"
+  />
 </head>
 
-<div class="popup-screen d-flex flex-row-reverse overflow-auto" id="popup-screen" style="display: none;">
-    <div class="popup-box pt-5 px-5 d-flex flex-column">
-        <div class="d-flex row align-items-center">
-            <div class="col cart-heading">My cart (02)</div>
-            <div class="col text-end close-btn" id="close-cart">&times;</div>
-        </div>
-        <div class="cart-item">
-            <div class="row my-3">
-                <div class="col-auto">
-                    <div>
-                        <img src="/img/rings/bag-prd2.png" alt="Product image" class="thankyou-preview-item-img">
-                    </div>
-                </div>
-                <div class="col d-flex flex-column justify-content-between">
-                    <div class="row">
-                        <div class="col form-header-text text-start">Diamond Ring</div>
-                        <div class="col text-end form-header-text">$100</div>
-                        <div class="mt-3 regular-text text-start">Size: S | Color: Blue</div>
-                        <div class="mt-2 regular-text text-start">Quantity: 1</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-inline-flex quanity-box align-items-center px-3">
-                                <div class="ico minus pe-2 text-center">&minus;</div>
-                                <input type="text" class="quantity-input" />
-                                <div class="ico plus ps-2 text-center">&plus;</div>
-                            </div>
-                        </div>
-                        <div class="col d-flex justify-content-end align-items-end">
-                            <div class="row" id="rm-btn">
-                                <p class="col-auto mb-0">Remove</p>
-                                <p class="col-auto mb-0 ps-0 close-btn">&times;</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="cart-item">
-            <div class="row my-3">
-                <div class="col-auto">
-                    <div>
-                        <img src="/img/rings/bag-prd2.png" alt="Product image" class="thankyou-preview-item-img">
-                    </div>
-                </div>
-                <div class="col d-flex flex-column justify-content-between">
-                    <div class="row">
-                        <div class="col form-header-text text-start">Diamond Ring</div>
-                        <div class="col text-end form-header-text">$100</div>
-                        <div class="mt-3 regular-text text-start">Size: S | Color: Blue</div>
-                        <div class="mt-2 regular-text text-start">Quantity: 1</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-inline-flex quanity-box align-items-center px-3">
-                                <div class="ico minus pe-2 text-center">&minus;</div>
-                                <input type="text" class="quantity-input" />
-                                <div class="ico plus ps-2 text-center">&plus;</div>
-                            </div>
-                        </div>
-                        <div class="col d-flex justify-content-end align-items-end">
-                            <div class="row" id="rm-btn">
-                                <p class="col-auto mb-0">Remove</p>
-                                <p class="col-auto mb-0 ps-0 close-btn">&times;</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="my-4" id="cart-notes">
-            <textarea class="form-control" id="exampleFormControlTextarea1"
-                placeholder="Please note any special requests for your order."></textarea>
-        </div>
-        <div class="mt-auto mb-4" id="cart-total">
-            <div class="cart-total-container">
-                <div class="cart-heading">Total: $15.600</div>
-                <div class="total-desc mt-2">Shipping & taxes calculated at checkout</div>
-                <div id="paynow" class="mt-4">
-                    <a class="btn d-flex align-items-center justify-content-center" id="btn-pay"
-                        href="./pages/checkout.html">Checkout</a>
-                </div>
-            </div>
-        </div>
-
+<div
+  class="popup-screen d-flex flex-row-reverse overflow-auto"
+  id="popup-screen"
+  style="display: none"
+>
+  <div class="popup-box pt-5 px-5 d-flex flex-column">
+    <div class="d-flex row align-items-center">
+      <div class="col cart-heading">My cart (02)</div>
+      <div class="col text-end close-btn" id="close-cart">&times;</div>
     </div>
+    <div class="cart-item">
+      <div class="row my-3">
+        <div class="col-auto">
+          <div>
+            <img
+              src="/img/rings/bag-prd2.png"
+              alt="Product image"
+              class="thankyou-preview-item-img"
+            />
+          </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-between">
+          <div class="row">
+            <div class="col form-header-text text-start">Diamond Ring</div>
+            <div class="col text-end form-header-text">$100</div>
+            <div class="mt-3 regular-text text-start">
+              Size: S | Color: Blue
+            </div>
+            <div class="mt-2 regular-text text-start">Quantity: 1</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="d-inline-flex quanity-box align-items-center px-3">
+                <div class="ico minus pe-2 text-center">&minus;</div>
+                <input type="text" class="quantity-input" />
+                <div class="ico plus ps-2 text-center">&plus;</div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-end align-items-end">
+              <div class="row" id="rm-btn">
+                <p class="col-auto mb-0">Remove</p>
+                <p class="col-auto mb-0 ps-0 close-btn">&times;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="cart-item">
+      <div class="row my-3">
+        <div class="col-auto">
+          <div>
+            <img
+              src="/img/rings/bag-prd2.png"
+              alt="Product image"
+              class="thankyou-preview-item-img"
+            />
+          </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-between">
+          <div class="row">
+            <div class="col form-header-text text-start">Diamond Ring</div>
+            <div class="col text-end form-header-text">$100</div>
+            <div class="mt-3 regular-text text-start">
+              Size: S | Color: Blue
+            </div>
+            <div class="mt-2 regular-text text-start">Quantity: 1</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="d-inline-flex quanity-box align-items-center px-3">
+                <div class="ico minus pe-2 text-center">&minus;</div>
+                <input type="text" class="quantity-input" />
+                <div class="ico plus ps-2 text-center">&plus;</div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-end align-items-end">
+              <div class="row" id="rm-btn">
+                <p class="col-auto mb-0">Remove</p>
+                <p class="col-auto mb-0 ps-0 close-btn">&times;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="my-4" id="cart-notes">
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        placeholder="Please note any special requests for your order."
+      ></textarea>
+    </div>
+    <div class="mt-auto mb-4" id="cart-total">
+      <div class="cart-total-container">
+        <div class="cart-heading">Total: $15.600</div>
+        <div class="total-desc mt-2">
+          Shipping & taxes calculated at checkout
+        </div>
+        <div id="paynow" class="mt-4">
+          <a
+            class="btn d-flex align-items-center justify-content-center"
+            id="btn-pay"
+            href="../../pages/checkout.html"
+            >Checkout</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
